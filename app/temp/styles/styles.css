@@ -469,18 +469,18 @@ img {
 	margin-left: 1rem;
 }
 
-.landing-text h1 {
-		font-size: 3rem;
+.landing-text__title {
+		font-size: 3.6rem;
 		font-weight: 300;
 	}
 
-.landing-text h2 {
-		font-size: 1.5rem;
+.landing-text__subtitle {
+		font-size: 1.789rem;
 		font-weight: 300;
 		margin-bottom: 3rem;
 	}
 
 .landing-text a {
-		font-size: .75rem;
+		font-size: .9rem;
 	}
 
