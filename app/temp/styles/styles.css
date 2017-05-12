@@ -470,17 +470,93 @@ img {
 }
 
 .landing-text__title {
-		font-size: 3.6rem;
 		font-weight: 300;
+		font-size: 2.4rem;
+	}
+
+@media (min-width: 600px) {
+
+.landing-text__title {
+			font-size: 3.6rem
+	}
+	}
+
+@media (min-width: 900px) {
+
+.landing-text__title {
+			font-size: 4rem
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.landing-text__title {
+			font-size: 5rem
+	}
 	}
 
 .landing-text__subtitle {
-		font-size: 1.789rem;
+		font-size: 1.15rem;
 		font-weight: 300;
 		margin-bottom: 3rem;
 	}
 
-.landing-text a {
-		font-size: .9rem;
+@media (min-width: 600px) {
+
+.landing-text__subtitle {
+			font-size: 1.789rem
 	}
+	}
+
+@media (min-width: 900px) {
+
+.landing-text__subtitle {
+			font-size: 1.89rem
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.landing-text__subtitle {
+			font-size: 2.4rem
+	}
+	}
+
+.landing-text a {
+		font-size: .8rem;
+	}
+
+@media (min-width: 600px) {
+
+.landing-text a {
+			font-size: 1rem
+	}
+	}
+
+@media (min-width: 900px) {
+
+.landing-text a {
+			font-size: 1.1rem
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.landing-text a {
+			font-size: 1.2rem
+	}
+	}
+
+.btn {
+	color: #fff;
+	background-color: rgba(250, 250, 250, 0.25);
+	border: 1px solid rgba(250, 250, 250, 0.5);
+	border-radius: 5px;
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
+	padding-top: .4rem;
+	padding-bottom: .25rem;
+	font-size: 12px;
+	font-weight: 300;
+}
 

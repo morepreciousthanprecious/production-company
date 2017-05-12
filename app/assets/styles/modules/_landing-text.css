@@ -6,18 +6,54 @@
 	margin-left: 1rem;
 
 	&__title {
-		font-size: 3.6rem;
 		font-weight: 300;
+		font-size: 2.4rem;
+
+		@mixin forTabletPortrait {
+			font-size: 3.6rem;
+		}
+
+		@mixin forTabletLandscape {
+			font-size: 4rem;
+		}
+
+		@mixin forDesktop {
+			font-size: 5rem;
+		}
 	}
 
 	&__subtitle {
-		font-size: 1.789rem;
+		font-size: 1.15rem;
 		font-weight: 300;
 		margin-bottom: 3rem;
+
+		@mixin forTabletPortrait {
+			font-size: 1.789rem;
+		}
+
+		@mixin forTabletLandscape {
+			font-size: 1.89rem;
+		}
+
+		@mixin forDesktop {
+			font-size: 2.4rem;
+		}
 	}
 
 	a {
-		font-size: .9rem;
+		font-size: .8rem;
+
+		@mixin forTabletPortrait {
+			font-size: 1rem;
+		}
+
+		@mixin forTabletLandscape {
+			font-size: 1.1rem;
+		}
+
+		@mixin forDesktop {
+			font-size: 1.2rem;
+		}
 	}
 }
 
