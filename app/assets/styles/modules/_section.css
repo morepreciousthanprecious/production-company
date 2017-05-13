@@ -1,0 +1,36 @@
+.section {
+
+	&__title {
+		font-weight: 300;
+		font-size: 1.6rem;
+
+		@mixin forTabletPortrait {
+			font-size: 2.2rem;
+		}
+
+		@mixin forTabletLandscape {
+			font-size: 2.6rem;
+		}
+
+		@mixin forDesktop {
+			font-size: 3rem;
+		}
+	}
+
+	&__small-heading {
+		font-weight: 700;
+		font-size: 1rem;
+	}
+
+	&__small-subheading {
+		font-weight: 300;
+		font-size: 1rem;
+		margin-top: -14px;
+	}
+
+	&__small-paragraph {
+		font-weight: 300;
+		font-size: .8rem;
+		text-align: justify;
+	}
+}
