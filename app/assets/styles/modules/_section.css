@@ -5,8 +5,9 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding-right: 8px;
-		padding-left: 2px;
+		padding-left: 0px;
 		top: 10px;
+		left: -2px;
 		max-width: 55px;
 
 		@mixin forTabletPortrait {
@@ -30,7 +31,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding-right: 12px;
-		padding-left: 2px;
+		padding-left: 0px;
 		top: 6px;
 		max-width: 55px;
 
@@ -90,7 +91,8 @@
 
 	&__small-paragraph {
 		font-weight: 300;
-		font-size: .8rem;
+		font-size: .75rem;
+		line-height: .9rem;
 		text-align: justify;
 	}
 }
