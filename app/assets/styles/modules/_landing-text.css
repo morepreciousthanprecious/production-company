@@ -4,6 +4,7 @@
 	text-align: right;
 	margin-right: 1rem;
 	margin-left: 1rem;
+	margin-bottom: 12rem;
 
 	&__title {
 		font-weight: 300;

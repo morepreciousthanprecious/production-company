@@ -1,5 +1,13 @@
 .section {
 
+	&__icon {
+
+	}
+
+	&__more {
+		float: right;
+	}
+
 	&__title {
 		font-weight: 300;
 		font-size: 1.6rem;
