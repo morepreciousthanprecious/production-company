@@ -1,0 +1,24 @@
+.project-item {
+	padding-left: 0px;
+	background-color: rgba(250, 250, 250, .12);
+
+	&__item-title {
+		padding-left: 100px;
+		background-color: rgba(250,250,250,.12);
+	}
+
+	&__icon {
+		float: left;
+		padding-left: 12px;
+		padding-right: 20px;
+	}
+
+	&__item-desc {
+		padding-left: 100px;
+		padding-right: 12px;
+
+		&--b-padding {
+			padding-bottom: 12px;
+		}
+	}
+}

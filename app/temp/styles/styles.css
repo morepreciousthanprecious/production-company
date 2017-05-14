@@ -788,3 +788,28 @@ img {
 	width: 100%;
 	height: 100%;
 }
+
+.project-item {
+	padding-left: 0px;
+	background-color: rgba(250, 250, 250, .12);
+}
+
+.project-item__item-title {
+		padding-left: 100px;
+		background-color: rgba(250,250,250,.12);
+	}
+
+.project-item__icon {
+		float: left;
+		padding-left: 12px;
+		padding-right: 20px;
+	}
+
+.project-item__item-desc {
+		padding-left: 100px;
+		padding-right: 12px;
+	}
+
+.project-item__item-desc--b-padding {
+			padding-bottom: 12px;
+		}
