@@ -1,7 +1,17 @@
 .section {
 
 	&__icon {
+		transform: translateY(.5rem);
+		max-width: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 10px;
+		padding-left: 2px;
 
+		@mixin forTabletPortrait {
+			transform: translateY(.7rem);
+			max-width: 65px;
+		}
 	}
 
 	&__more {
@@ -11,17 +21,22 @@
 	&__title {
 		font-weight: 300;
 		font-size: 1.6rem;
+		margin-bottom: 2rem;
+
 
 		@mixin forTabletPortrait {
 			font-size: 2.2rem;
+			margin-bottom: 2.6rem;
 		}
 
 		@mixin forTabletLandscape {
 			font-size: 2.6rem;
+			margin-bottom: 2.8rem;
 		}
 
 		@mixin forDesktop {
 			font-size: 3rem;
+			margin-bottom: 3.2rem;
 		}
 	}
 
