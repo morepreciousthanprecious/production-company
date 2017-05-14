@@ -1,5 +1,22 @@
 .wrapper {
 	padding-left: 8px;
 	padding-right: 8px;
+	margin-right: auto;
+	margin-left: auto;
 	max-width: 480px;
+
+	@mixin forTabletPortrait {
+		max-width: 720px;
+
+	}
+
+	@mixin forTabletLandscape {
+		max-width: 920px
+	}
+
+	@mixin forDesktop {
+		max-width: 1280px;
+	}
+
+
 }
