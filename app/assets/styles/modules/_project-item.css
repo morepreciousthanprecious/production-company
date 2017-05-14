@@ -3,14 +3,18 @@
 	background-color: rgba(250, 250, 250, .12);
 
 	&__item-title {
-		padding-left: 100px;
 		background-color: rgba(250,250,250,.12);
+		padding-left: 100px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		margin-top: -4px;
 	}
 
 	&__icon {
 		float: left;
 		padding-left: 12px;
 		padding-right: 20px;
+		padding-top: 4px;
 	}
 
 	&__item-desc {

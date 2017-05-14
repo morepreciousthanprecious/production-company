@@ -3,7 +3,7 @@
 	@mixin clearfix;
 
 	&--gutters {
-		margin-right: -32px;
+		margin-right: -18px;
 
 		@mixin forDesktop {
 			margin-right: -64px;
@@ -11,7 +11,7 @@
 	}
 
 	&--gutters > div {
-		padding-right: 32px;
+		padding-right: 18px;
 
 		@mixin forDesktop {
 			padding-right: 64px;
