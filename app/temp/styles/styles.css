@@ -641,6 +641,7 @@ img {
 
 .section__more {
 		float: right;
+		margin-bottom: 5rem;
 	}
 
 .section__title {
@@ -690,6 +691,10 @@ img {
 		line-height: .9rem;
 		text-align: justify;
 	}
+
+.section__small-paragraph--b-margin {
+			margin-bottom: 4.5rem;
+		}
 
 .wrapper {
 

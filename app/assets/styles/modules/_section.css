@@ -54,6 +54,7 @@
 
 	&__more {
 		float: right;
+		margin-bottom: 5rem;
 	}
 
 	&__title {
@@ -94,5 +95,9 @@
 		font-size: .75rem;
 		line-height: .9rem;
 		text-align: justify;
+
+		&--b-margin {
+			margin-bottom: 4.5rem;
+		}
 	}
 }
