@@ -1,0 +1,27 @@
+.our-team {
+	background-color: $darkGrey;
+	padding: 0 20px 1px 20px;
+	margin-bottom: 100px;
+
+	&__heading {
+		background-color: $lightGrey;
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-bottom: 1px;
+	}
+
+	&__photo {
+		border-radius: 80px;
+		overflow: hidden;
+		width: 160px;
+		height: 160px;
+		margin: 120px auto -80px auto;
+		position: relative;
+		top: -80px;
+		border: 5px solid $lightGrey;
+	}
+
+	&__name {
+		text-align: center;
+	}
+}

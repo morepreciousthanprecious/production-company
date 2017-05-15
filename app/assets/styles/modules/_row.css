@@ -24,4 +24,11 @@
 			width: 33.3%;
 		}
 	}
+
+	@mixin forDesktop {
+		&__large-3 {
+			float: left;
+			width: 25%;
+		}
+	}
 }
