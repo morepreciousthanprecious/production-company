@@ -696,6 +696,10 @@ img {
 			margin-bottom: 4.5rem;
 		}
 
+.section__xsmall-paragraph {
+		font-size: .5rem;
+	}
+
 .wrapper {
 
 	overflow: hidden;
@@ -749,7 +753,7 @@ img {
 @media (min-width: 1200px) {
 
 .row--gutters {
-			margin-right: -64px
+			margin-right: -32px
 	}
 	}
 
@@ -760,7 +764,7 @@ img {
 @media (min-width: 1200px) {
 
 .row--gutters > div {
-			padding-right: 64px
+			padding-right: 32px
 	}
 	}
 

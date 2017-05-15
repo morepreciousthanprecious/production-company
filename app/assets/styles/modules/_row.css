@@ -6,7 +6,7 @@
 		margin-right: -18px;
 
 		@mixin forDesktop {
-			margin-right: -64px;
+			margin-right: -32px;
 		}
 	}
 
@@ -14,7 +14,7 @@
 		padding-right: 18px;
 
 		@mixin forDesktop {
-			padding-right: 64px;
+			padding-right: 32px;
 		}
 	}
 
