@@ -1,0 +1,9 @@
+.footer {
+	background-color: $deepGrey;
+
+	&__tiny-txt {
+		font-size: .5rem;
+		font-weight: 300;
+		text-align: center;
+	}
+}
