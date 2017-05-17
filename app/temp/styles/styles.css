@@ -740,6 +740,10 @@ img {
 }
 	}
 
+.row--t-padding {
+		padding-top: 120px;
+	}
+
 .row::after {
 		content:"";
 		clear: both;
@@ -781,6 +785,27 @@ img {
 			width: 25%;
 		}
 	}
+
+/* Begin Equal Height Rules */
+
+@media (min-width: 900px) {
+
+.row--equal-height-at-medium {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap
+	}
+	}
+
+.row--equal-height-at-medium > div {
+			float: none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			
+		}
 
 .video-container {
 	position: relative;
@@ -841,7 +866,7 @@ img {
 
 .our-team {
 	background-color: rgba(250, 250, 250, .12);
-	padding: 0 20px 1px 20px;
+	padding: 120px 20px 1px 20px;
 	margin-bottom: 100px;
 }
 
@@ -857,7 +882,7 @@ img {
 		overflow: hidden;
 		width: 160px;
 		height: 160px;
-		margin: 120px auto -80px auto;
+		margin: -120px auto -80px auto;
 		position: relative;
 		top: -80px;
 		border: 5px solid rgba(250, 250, 250, 0.24);

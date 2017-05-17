@@ -1,4 +1,7 @@
 .row {
+	&--t-padding {
+		padding-top: 120px;
+	}
 	
 	@mixin clearfix;
 
@@ -29,6 +32,22 @@
 		&__large-3 {
 			float: left;
 			width: 25%;
+		}
+	}
+
+	/* Begin Equal Height Rules */
+
+	&--equal-height-at-medium {
+
+		@mixin forTabletLandscape {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		& > div {
+			float: none;
+			display: flex;
+			
 		}
 	}
 }
