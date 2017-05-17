@@ -1,7 +1,12 @@
 .primary-nav {
-	&--pull-right {
-		float: right;
-	}
+	display: none;
+
+	@mixin forTabletPortrait {
+		display: block;
+
+		&--pull-right {
+			float: right;
+		}
 
 	ul {
 		margin: 0;
@@ -21,4 +26,7 @@
 		font-weight: 300;
 		font-size: .8rem;
 	}
+	}
+
+
 }

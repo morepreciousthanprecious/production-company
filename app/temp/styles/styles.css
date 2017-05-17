@@ -917,30 +917,48 @@ img {
 	padding: 1rem;
 }
 
-.primary-nav--pull-right {
-		float: right;
+.site-header--p-top {
+		padding-top: 2px;
 	}
 
-.primary-nav ul {
+.primary-nav {
+	display: none;
+
+
+}
+
+@media (min-width: 600px) {
+
+.primary-nav {
+		display: block
+
+
+}
+
+		.primary-nav--pull-right {
+			float: right;
+		}
+
+	.primary-nav ul {
 		margin: 0;
 		padding: 0;
 	}
-
-.primary-nav ul::after {
+		.primary-nav ul::after {
 		content:"";
 		clear: both;
 		display: table;
 	}
 
-.primary-nav li {
+	.primary-nav li {
 		list-style: none;
 		float: left;
 		padding-right: 20px;
 	}
 
-.primary-nav a {
+	.primary-nav a {
 		color: rgba(250, 250, 250, 0.5);
 		text-decoration: none;
 		font-weight: 300;
 		font-size: .8rem;
+	}
 	}
