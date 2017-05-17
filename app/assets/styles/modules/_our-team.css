@@ -18,7 +18,7 @@
 		margin: -120px auto -80px auto;
 		position: relative;
 		top: -80px;
-		border: 5px solid $lightGrey;
+		border: 5px solid #717171;
 	}
 
 	&__name {

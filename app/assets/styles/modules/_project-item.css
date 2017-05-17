@@ -1,6 +1,8 @@
 .project-item {
 	padding-left: 0px;
 	background-color: $darkGrey;
+	margin-top: 20px;
+	margin-bottom: 0px;
 
 	&__item-title {
 		background-color: $darkGrey;

@@ -777,12 +777,17 @@ img {
 			float: left;
 			width: 33.3%;
 		}
+
+		.row__medium-6 {
+			float: left;
+			width: 50%;
+		}
 	}
 
 @media (min-width: 1200px) {
-		.row__large-3 {
+		.row__large-4 {
 			float: left;
-			width: 25%;
+			width: 33.3%;
 		}
 	}
 
@@ -828,6 +833,8 @@ img {
 .project-item {
 	padding-left: 0px;
 	background-color: rgba(250, 250, 250, .12);
+	margin-top: 20px;
+	margin-bottom: 0px;
 }
 
 .project-item__item-title {
@@ -885,7 +892,7 @@ img {
 		margin: -120px auto -80px auto;
 		position: relative;
 		top: -80px;
-		border: 5px solid rgba(250, 250, 250, 0.24);
+		border: 5px solid #717171;
 	}
 
 .our-team__name {
