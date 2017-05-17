@@ -1,7 +1,7 @@
 .our-team {
 	background-color: $darkGrey;
 	padding: 120px 20px 1px 20px;
-	margin-bottom: 100px;
+	margin-bottom: 120px;
 
 	&__heading {
 		background-color: $lightGrey;

@@ -1,0 +1,8 @@
+.press {
+	background-color: $darkGrey;
+	margin-bottom: 30px;
+
+	&--block {
+		padding-left: 30px;
+	}
+}
