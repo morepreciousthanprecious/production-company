@@ -21,6 +21,13 @@
 		}
 	}
 
+	@mixin forTabletPortrait {
+		&__small-4 {
+			float: left;
+			width: 33.3%;
+		}
+	}
+
 	@mixin forTabletLandscape {
 		&__medium-4 {
 			float: left;
@@ -65,6 +72,8 @@
 			
 		}
 	}
+
+
 
 	/* Begin Press Gutter Rules*/
 
