@@ -31,5 +31,10 @@
 		font-weight: 300;
 		font-size: .8rem;
 	}
+
+	&--is-visible {
+		display: block;
+		padding-top: 24px;
+	}
 	
 }
