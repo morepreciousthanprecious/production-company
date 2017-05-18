@@ -67,8 +67,9 @@
 		}
 
 		@mixin forDesktop {
-			padding: 24px;
-			margin: 10px;
+			max-width: 180px;
+			padding: 36px;
+			margin: 1px;
 		}
 	}
 }

@@ -5,8 +5,11 @@
 	margin-bottom: 0px;
 
 	&__item-title {
+		font-weight: 400;
+		font-size: 1rem;
+		text-align: center;
 		background-color: $darkGrey;
-		padding-left: 100px;
+
 		padding-top: 12px;
 		padding-bottom: 12px;
 		margin-top: -4px;
@@ -24,7 +27,7 @@
 		padding-right: 12px;
 
 		&--b-padding {
-			padding-bottom: 12px;
+			padding-bottom: 0px;
 		}
 	}
 }
