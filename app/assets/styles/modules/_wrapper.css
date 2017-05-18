@@ -9,7 +9,7 @@
 	max-width: 480px;
 
 	@mixin forTabletPortrait {
-		max-width: 720px;
+		max-width: 730px;
 
 	}
 

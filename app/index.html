@@ -13,19 +13,20 @@
 <body>
 	<header class="site-header">
 		<div class="wrapper">
-			<a href="#">
-				<div class="wrapper"></div>
-				<img class ="site-header--p-top" width="200px" src="assets/images/wr-logotype-white@4x.png">
-			</a>
-			<nav class="primary-nav primary-nav--pull-right site-header--p-top">
-				<ul>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">TEAM</a></li>
-					<li><a href="#">WORK</a></li>
-					<li><a href="#">PRESS</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
-			</nav>
+			<div class="wrapper">
+				<a href="#">
+					<img class ="site-header--p-top" width="200px" src="assets/images/wr-logotype-white@4x.png">
+				</a>
+				<nav class="primary-nav primary-nav--pull-right site-header--p-top">
+					<ul>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">TEAM</a></li>
+						<li><a href="#">WORK</a></li>
+						<li><a href="#">PRESS</a></li>
+						<li class="primary-nav__li-last"><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 
@@ -334,83 +335,104 @@
 	<div class="section">
 		<div class="wrapper">
 			<h2 class="section__title">PRESS</h2>
-			<div class="row row--gutters row--equal-height-at-medium">
+			<div class="row row--gutters-press row--equal-height-at-medium">
 				<div class="row__medium-4">
-					<div class="press press--block">
+					<div class="press press__block">
 						<blockquote>
 							<q>A Brave Heart: The Lizzie Velasquez Story</q> threatens to melt even the grinchiest of hearts in its audience, sending us to a thesaurus looking for alternatives to avoid overusing the word 'inspiring.'
 						</blockquote>
-						<p>&mdash;Kimber Myers</p>
-						<p>
-							<a href="http://bit.ly/1izi1Tf">
-							Indiewire The Playlist
-							</a>
-						</p>
+						<div class="press__block-source">
+							<p class="press__block-name">&mdash;Kimber Myers</p>
+							<p>
+								<a href="http://bit.ly/1izi1Tf">
+								Indiewire The Playlist
+								</a>
+							</p>
+						</div>
 					</div>
 				</div>
 
 				<div class="row__medium-4">
-					<div class="press">
+					<div class="press press__block">
 						<blockquote>
 							A Brave Heart is a tender and soulful film about a tender and soulful human being. It illuminates the early life of Lizzie, the awful moment that changed her life forever, and what she did after.
 						</blockquote>
-						<p>&mdash;Chase Whale</p>
-						<p>
-							<a href="http://bit.ly/1fjejv0">Hammer To Nail</a>
-						</p>
+						<div class="press__block-source">
+							<p class="press__block-name">&mdash;Chase Whale</p>
+							<p>
+								<a href="http://bit.ly/1fjejv0">Hammer To Nail</a>
+							</p>
+						</div>
 					</div>
 				</div>
 
 				<div class="row__medium-4">
-					<div class="press">
+					<div class="press press__block">
 						<blockquote>
 							Like its protagonist, the documentary “A Brave Heart: The Lizzie Velasquez Story” is small and sweet — and much stronger than you might expect.
 						</blockquote>
-						<p>&mdash;Katie Walsh</p>
-						<p>
-							<a href="http://lat.ms/1LBZ5Pl">Los Angeles Times</a>
-						</p>
+						<div class="press__block-source">
+							<p class="press__block-name">&mdash;Katie Walsh</p>
+							<p>
+								<a href="http://lat.ms/1LBZ5Pl">Los Angeles Times</a>
+							</p>
+						</div>
 					</div>
 				</div>
 
 				<div class="row__medium-4">
-					<div class="press">
+					<div class="press press__block">
 						<blockquote>
 							One of the Most Innovative, Interesting, and Purpose-Driven Women Led Startups to Watch
 						</blockquote>
-						<p>&mdash;Inc. Magazine</p>
+						<div class="press__block-source">
+							<p class="press__block-name">&mdash;Inc. Magazine</p>
+						</div>
 					</div>
 				</div>
 
 				<div class="row__medium-8">
-					<div class="press">
+					<div class="press press__block">
 						<blockquote>
 							Director Sara Hirsh Bordo sets out not just to honor Velasquez but to underscore some of the horrors of the internet, which allows and encourages a new kind of hate speech.
 						</blockquote>
-						<p>&mdash;Stephen Farber</p>
-						<p>
-							<a href="http://bit.ly/1iP0Ei3">The Hollywood Reporter</a>
-						</p>
+						<div class="press__block-source">
+						<p class="press__block-name">&mdash;Stephen Farber</p>
+							<p>
+								<a href="http://bit.ly/1iP0Ei3">The Hollywood Reporter</a>
+							</p>
+						</div>
 					</div>
 				</div>
 
 				<div class="row__medium-12">
-					<div class="press">
-						<img width="50px" src="assets/images/inc-white@4x.png">
-
-						<img width="50px" src="assets/images/indiewire-white@4x.png">
-
-						<img width="50px" src="assets/images/LAtimes-white_1@4x.png">
-
-						<img width="50px" src="assets/images/thehollywoodreporter-white@4x.png">
-
-						<img width="50px" src="assets/images/newyorktimes-white-square@4x.png">
-
-						<img width="50px" src="assets/images/huffpost-white@4x.png">
-
-						<img width="50px" src="assets/images/AmFilmshow-white@4x.png">
-
-						<img width="50px" src="assets/images/AP-white@4x.png">
+					<div class="press press__block">
+						<ul class="press__icon-list">
+							<li class="press__icon-list--item">
+								<img src="assets/images/inc-white@4x.png">
+							</li>
+							<li class="press__icon-list--item">
+								<img src="assets/images/indiewire-white@4x.png">
+							</li>
+							<li class="press__icon-list--item">
+								<img src="assets/images/LAtimes-white_1@4x.png">
+							</li>
+							<li class="press__icon-list--item">
+								<img src="assets/images/thehollywoodreporter-white@4x.png">
+							</li>
+							<li class="press__icon-list--item">
+								<img src="assets/images/newyorktimes-white-square@4x.png">
+							</li>
+							<li class="press__icon-list--item">
+								<img src="assets/images/huffpost-white@4x.png">
+							</li>
+							<li class="press__icon-list--item">
+								<img src="assets/images/AmFilmshow-white@4x.png">
+							</li>
+							<li class="press__icon-list--item">
+								<img src="assets/images/AP-white@4x.png">
+							</li>
+						</ul>
 					</div>
 				</div>
 		</div>

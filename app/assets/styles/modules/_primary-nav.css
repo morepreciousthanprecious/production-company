@@ -20,6 +20,10 @@
 		padding-right: 20px;
 	}
 
+	li:last-child {
+		padding-right: 8px;
+	}
+
 	a {
 		color: $borderGrey;
 		text-decoration: none;

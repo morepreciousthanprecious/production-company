@@ -65,4 +65,22 @@
 			
 		}
 	}
+
+	/* Begin Press Gutter Rules*/
+
+	&--gutters-press {
+		margin-right: -36px;
+
+		@mixin forDesktop {
+			margin-right: -32px;
+		}
+	}
+
+	&--gutters-press > div {
+		padding-right: 36px;
+
+		@mixin forDesktop {
+			padding-right: 32px;
+		}
+	}
 }

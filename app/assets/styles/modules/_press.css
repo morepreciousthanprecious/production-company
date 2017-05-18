@@ -2,7 +2,52 @@
 	background-color: $darkGrey;
 	margin-bottom: 30px;
 
-	&--block {
-		padding-left: 30px;
+	a {
+		color: $borderGrey;
+		font-weight: 300;
+	}
+
+	blockquote {
+		font-size: 1rem;
+		font-weight: 200;
+		font-style: italic;
+		margin-bottom: 12px;
+	}
+
+	&__block {
+		padding-top: 16px;
+	}
+
+	&__block-source {
+		float: right;
+		text-align: right;
+		padding-right: 36px;
+		padding-bottom: 20px;
+		font-size: .85rem;
+	}
+
+	&__block-name {
+		line-height: 0px;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		@mixin clearfix;
+	}
+
+	li {
+		list-style: none;
+		float: left;
+		padding-right: 36px;
+		padding-left: 36px;
+	}
+
+	li > img {
+		max-height: 3rem;
+	}
+
+	&__icon-list--item {
+		max-width: 8.5rem;
 	}
 }
