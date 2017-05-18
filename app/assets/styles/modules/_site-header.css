@@ -4,9 +4,29 @@
 	z-index: 2;
 	top: 0;
 	background-color: $deepGrey;
-	padding: 1rem;
+	padding-top: 1.1rem;
+	padding-bottom: 1rem;
+	padding-left: 10px;
 
 	&--p-top {
 		padding-top: 2px;
+		margin-left: -7px;
+	}
+
+	&--p-title {
+		display: none;
+	}
+
+	&__menu-icon {
+		width: 20px;
+		height: 20px;
+		background-color: $deepGrey;
+		position: absolute;
+		top: 18px;
+		right: 18px;
+
+		@mixin forTabletPortrait {
+			display: none;
+		}
 	}
 }

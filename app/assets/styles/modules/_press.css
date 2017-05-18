@@ -59,8 +59,8 @@
 	}
 
 	li > img {
-		max-width: 90px;
-		padding: 16px;
+		max-width: 100px;
+		padding: 12px;
 
 		@mixin forTabletLandscape {
 			max-width: 130px;
