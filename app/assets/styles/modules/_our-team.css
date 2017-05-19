@@ -1,9 +1,13 @@
 .our-team {
-	margin-top: 1rem;
+	margin-top: 10rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
 	padding: 0px 20px 1px 20px;
-	margin-bottom: 10px;
+	margin-bottom: 110px;
+
+	@mixin forTabletLandscape {
+		margin-top: 1rem;
+	}
 
 	&__heading {
 		background-color: $lightGrey;
@@ -90,6 +94,19 @@
 
 	&--section-title {
 		margin-bottom: -3rem;
+		text-align: center;
+
+		@mixin forTabletLandscape {
+			text-align: left;
+		}
+	}
+
+	&--t-margin {
+		margin-top: 14rem;
+
+		@mixin forTabletLandscape {
+			margin-top: 4rem;
+		}
 	}
 
 }

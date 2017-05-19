@@ -1,5 +1,5 @@
 .section {
-	margin-bottom: 15rem;
+	margin-bottom: 10rem;
 
 	&__icon-film {
 		position: relative;
@@ -51,7 +51,8 @@
 
 	&__more {
 		float: right;
-		margin-bottom: 5rem;
+		margin-top: 1rem;
+		margin-bottom: 3rem;
 	}
 
 	&__title {

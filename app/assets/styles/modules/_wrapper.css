@@ -21,6 +21,20 @@
 		max-width: 1800px;
 	}
 
+	&__narrow {
+		overflow: hidden;
 
+		@mixin forTabletLandscape {
+			max-width: 1000px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		@mixin forDesktop {
+			max-width: 1100px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
 
 }

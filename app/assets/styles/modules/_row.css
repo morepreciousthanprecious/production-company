@@ -55,6 +55,11 @@
 			float: left;
 			width: 33.3%;
 		}
+
+		&__large-12 {
+			float: left;
+			width: 100%;
+		}
 	}
 
 	/* Begin Equal Height Rules */
