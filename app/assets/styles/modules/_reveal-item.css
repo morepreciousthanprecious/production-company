@@ -1,0 +1,10 @@
+.reveal-item__up {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all .5s ease-out;
+
+	&--is-visible {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}

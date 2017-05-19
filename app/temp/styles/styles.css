@@ -1296,3 +1296,17 @@ a {
 			margin: 1px
 	}
 	}
+
+.reveal-item__up {
+	opacity: 0;
+	-webkit-transform: translateY(100px);
+	        transform: translateY(100px);
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+
+.reveal-item__up--is-visible {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
+	}
