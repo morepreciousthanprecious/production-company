@@ -5,9 +5,19 @@
 	margin-right: 1rem;
 	margin-left: 1rem;
 	margin-bottom: 12rem;
+	filter: drop-shadow(2px 2px 5px #000000);
+
+	@mixin forTabletPortrait {
+		margin-bottom: 17rem;
+	}
+
+	@mixin forTabletLandscape {
+		margin-bottom: 17rem;
+	}
 
 	@mixin forDesktop {
 		margin-right: 4rem;
+		margin-bottom: 20rem;
 	}
 
 

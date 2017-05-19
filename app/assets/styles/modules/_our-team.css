@@ -1,13 +1,21 @@
 .our-team {
-	background-color: $darkGrey;
-	padding: 120px 20px 1px 20px;
-	margin-bottom: 120px;
+	margin-top: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	padding: 0px 20px 1px 20px;
+	margin-bottom: 10px;
 
 	&__heading {
 		background-color: $lightGrey;
 		margin-left: -20px;
 		margin-right: -20px;
 		padding-bottom: 1px;
+
+		@mixin forTabletLandscape {
+			margin-left: 2.4rem;
+			padding-left: 5rem;
+			padding-top: 2.7rem;
+		}
 	}
 
 	&__photo {
@@ -17,11 +25,71 @@
 		height: 160px;
 		margin: -120px auto -80px auto;
 		position: relative;
-		top: -80px;
-		border: 5px solid #717171;
+		top: -77px;
+		border: 4px solid #717171;
+
+		@mixin forTabletLandscape {
+			margin-left: -9rem;
+			margin-top: 2rem;
+		}
+	}
+
+	&__heading-text {
+		@mixin forTabletLandscape {
+			margin-top: -15rem;
+			padding-top: 8px;
+		}
 	}
 
 	&__name {
 		text-align: center;
+		@mixin forTabletLandscape {
+			text-align: left;
+			padding-left: 2rem;
+		}
 	}
+
+	&__small-paragraph {
+		background-color: $darkGrey;
+		font-weight: 300;
+		font-size: .75rem;
+		line-height: 1rem;
+		text-align: justify;
+		padding-bottom: 2rem;
+		padding-top: 1rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		margin-top: 0px;
+		margin-bottom: 2rem;
+		margin-left: -20px;
+		margin-right: -20px;
+
+		&--b-margin {
+			margin-bottom: 1.5rem;
+		}
+
+		@mixin forTabletLandscape {
+			background-color: $darkGrey;
+			font-weight: 300;
+			font-size: .75rem;
+			line-height: 1rem;
+			text-align: justify;
+			margin-left: 7rem;
+			margin-top: 0px;
+			margin-right: -20px;
+			padding-top: 1rem;
+			padding-left: 2.29rem;
+			padding-right: 2.29rem;
+			padding-bottom: 2rem;
+
+			&--b-margin {
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+
+	&--section-title {
+		margin-bottom: -3rem;
+	}
+
 }

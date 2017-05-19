@@ -3,16 +3,17 @@
 	background-color: $darkGrey;
 	margin-top: 20px;
 	margin-bottom: 0px;
+	filter: drop-shadow(1px 1px 1px #000000);
 
 	&__item-title {
 		font-weight: 400;
 		font-size: 1rem;
-		text-align: center;
+		text-align: left;
+		padding-left: 100px;
 		background-color: $darkGrey;
-
-		padding-top: 12px;
+		padding-top: 14px;
 		padding-bottom: 12px;
-		margin-top: -4px;
+		margin-top: -3px;
 	}
 
 	&__icon {
