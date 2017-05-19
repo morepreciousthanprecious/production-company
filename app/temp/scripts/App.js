@@ -105,6 +105,7 @@ var MobileMenu = function () {
 		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
 			this.menuContent.toggleClass("primary-nav--is-visible");
+			this.menuIcon.toggleClass("site-header__menu-icon--close-x");
 		}
 	}]);
 
