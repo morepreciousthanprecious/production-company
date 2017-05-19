@@ -1,12 +1,18 @@
 .our-team {
 	margin-top: 10rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
+	margin-left: -1rem;
+	margin-right: -1rem;
 	padding: 0px 20px 1px 20px;
 	margin-bottom: 110px;
 
+	@mixin forTabletPortrait {
+		margin-bottom: 40px; 
+	}
+
 	@mixin forTabletLandscape {
 		margin-top: 1rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 
 	&__heading {
@@ -61,8 +67,8 @@
 		text-align: justify;
 		padding-bottom: 2rem;
 		padding-top: 1rem;
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
 		margin-top: 0px;
 		margin-bottom: 2rem;
 		margin-left: -20px;

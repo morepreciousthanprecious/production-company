@@ -1,34 +1,109 @@
 .project-item {
 	padding-left: 0px;
-	background-color: $darkGrey;
+	background-color: $deepGrey;
 	margin-top: 20px;
 	margin-bottom: 30px;
-	filter: drop-shadow(1px 1px 1px #000000);
+
+	
 
 	&__item-title {
-		font-weight: 400;
-		font-size: 1rem;
-		text-align: left;
-		padding-left: 100px;
-		background-color: $darkGrey;
-		padding-top: 14px;
+		font-weight: 200;
+		font-size: 2rem;
+		text-align: center;
+		background-color: ;
+		padding-top: 24px;
 		padding-bottom: 12px;
 		margin-top: -3px;
+		filter: drop-shadow(3px 3px 5px #000000);
+
+		@mixin forTabletPortrait {
+			text-align: left;
+			padding-left: 12px;
+		}
 	}
 
 	&__icon {
-		float: left;
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 4px;
+		float: right;
+		margin-top: 1rem;
+		margin-right: 10px;
+		padding-bottom: 20px;
+		max-height: 100px;
+
+		&-wgh {
+			transform: translateY(-19%);
+		}
+
+		&-ph {
+			margin-bottom: 20px;
+
+			@mixin forTabletLandscape {
+				transform: translateY(46%);
+			}
+			@mixin forDesktop {
+				transform: translateY(42%);
+			}
+		}
+
+		&-abh {
+			margin-bottom: 20px;
+
+			@mixin forTabletLandscape {
+				transform: translateY(-4%);
+			}
+			@mixin forDesktop {
+				transform: translateY(24%);
+			}
+		}
+
+		&--pm {
+			margin-bottom: 20px;
+
+			@mixin forTabletLandscape {
+				margin-bottom: 21px;
+			}
+		}
+
+		&--wm {
+			margin-bottom: 20px;
+		}
+
 	}
 
 	&__item-desc {
-		padding-left: 100px;
+		padding-left: 10px;
 		padding-right: 12px;
+		margin-top: -1rem;
+	}
 
-		&--b-padding {
-			padding-bottom: 0px;
+	&__item-desc--sub {
+		padding-top: 5rem;	 
+
+		&--abh {
+			padding-top: 3.95rem;
+
+			@mixin forTabletLandscape {
+				padding-top: 4.7rem;
+			}
+
+			@mixin forDesktop {
+				padding-top: 6rem;
+			}
+		}
+
+		&--ph {
+			padding-top: 2.78rem;
+
+			@mixin forTabletLandscape {
+				padding-top: 5.2rem;
+			}
+		}
+
+		&--pm {
+			padding-top: 4.55rem;
+		}
+
+		&--wm {
+			padding-top: 6.3rem;
 		}
 	}
 }
