@@ -8,7 +8,7 @@
 	&--gutters {
 		margin-right: -18px;
 
-		@mixin forDesktop {
+		@mixin forTabletLandscape {
 			margin-right: -32px;
 		}
 	}
@@ -16,7 +16,7 @@
 	&--gutters > div {
 		padding-right: 18px;
 
-		@mixin forDesktop {
+		@mixin forTabletLandscape {
 			padding-right: 32px;
 		}
 	}

@@ -103,6 +103,7 @@
 		text-align: center;
 
 		@mixin forTabletLandscape {
+			margin-bottom: -7rem;
 			text-align: left;
 		}
 	}

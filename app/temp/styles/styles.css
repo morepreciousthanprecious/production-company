@@ -822,7 +822,7 @@ a {
 @media (min-width: 900px) {
 
 .wrapper {
-		max-width: 1080px
+		max-width: 980px
 
 }
 	}
@@ -890,7 +890,7 @@ a {
 		margin-right: -18px;
 	}
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
 
 .row--gutters {
 			margin-right: -32px
@@ -901,7 +901,7 @@ a {
 		padding-right: 18px;
 	}
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
 
 .row--gutters > div {
 			padding-right: 32px
@@ -1303,6 +1303,7 @@ a {
 @media (min-width: 900px) {
 
 .our-team--section-title {
+			margin-bottom: -7rem;
 			text-align: left
 	}
 	}
