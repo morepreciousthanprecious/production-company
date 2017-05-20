@@ -3,11 +3,12 @@
 	margin-bottom: 30px;
 
 	a {
-		color: $borderGrey;
+		color: $darkGrey;
 		font-weight: 300;
 	}
 
 	blockquote {
+		color: #ffffff;
 		font-size: 1rem;
 		font-weight: 200;
 		font-style: italic;
@@ -19,6 +20,7 @@
 	}
 
 	&__block-source {
+		color: #ffffff;
 		float: right;
 		text-align: right;
 		padding-right: 36px;

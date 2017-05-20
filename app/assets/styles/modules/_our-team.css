@@ -16,7 +16,8 @@
 	}
 
 	&__heading {
-		background-color: $lightGrey;
+		color: #ffffff;
+		background-color: $darkGrey;
 		margin-left: -20px;
 		margin-right: -20px;
 		padding-bottom: 1px;
@@ -36,7 +37,7 @@
 		margin: -120px auto -80px auto;
 		position: relative;
 		top: -77px;
-		border: 4px solid #717171;
+		
 
 		@mixin forTabletLandscape {
 			margin-left: -9rem;
@@ -60,7 +61,7 @@
 	}
 
 	&__small-paragraph {
-		background-color: $darkGrey;
+		background-color: $lightGrey;
 		font-weight: 300;
 		font-size: .75rem;
 		line-height: 1rem;
@@ -79,7 +80,7 @@
 		}
 
 		@mixin forTabletLandscape {
-			background-color: $darkGrey;
+			background-color: $lightGrey;
 			font-weight: 300;
 			font-size: .75rem;
 			line-height: 1rem;

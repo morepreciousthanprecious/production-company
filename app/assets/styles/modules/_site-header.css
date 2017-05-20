@@ -1,13 +1,13 @@
 .site-header {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	z-index: 2;
 	top: 0;
-	background-color: $deepGrey;
+	background-color: #ffffff;
 	padding-top: 1.1rem;
 	padding-bottom: 1rem;
 	padding-left: 10px;
-	filter: drop-shadow(2px 2px 5px #000000);
+	filter: drop-shadow(1px 0px 2px $darkGrey);
 
 	&--p-top {
 		padding-top: 2px;
@@ -32,7 +32,7 @@
 			left: 0;
 			width: 20px;
 			height: 1px;
-			background-color: $borderGrey;
+			background-color: $darkGrey;
 			transform-origin: 0 50%;
 			transition: transform .3s ease-out;
 		}
@@ -43,7 +43,7 @@
 			left: 0;
 			width: 20px;
 			height: 1px;
-			background-color: $borderGrey;
+			background-color: $darkGrey;
 			transition: all .3s ease-out;
 		}
 
@@ -54,7 +54,7 @@
 			left: 0;
 			width: 20px;
 			height: 1px;
-			background-color: $borderGrey;
+			background-color: $darkGrey;
 			transform-origin: 20% 100%;
 			transition: transform .3s ease-out;
 		}

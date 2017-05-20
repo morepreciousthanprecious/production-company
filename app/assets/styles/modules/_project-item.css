@@ -1,12 +1,14 @@
 .project-item {
+	color: #ffffff;
 	padding-left: 0px;
-	background-color: $deepGrey;
+	background-color: $darkGrey;
 	margin-top: 20px;
 	margin-bottom: 30px;
 
 	
 
 	&__item-title {
+		color: #ffffff;
 		font-weight: 200;
 		font-size: 2rem;
 		text-align: center;
@@ -14,7 +16,7 @@
 		padding-top: 24px;
 		padding-bottom: 12px;
 		margin-top: -3px;
-		filter: drop-shadow(3px 3px 5px #000000);
+		filter: drop-shadow(2px 1px 1px #000000);
 
 		@mixin forTabletPortrait {
 			text-align: left;
