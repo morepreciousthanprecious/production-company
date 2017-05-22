@@ -1,0 +1,72 @@
+.animated-logo__logo {
+		position: absolute;
+		z-index: 2;
+		top: 20%;
+		left: 30%;
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
+}
+		
+
+.animated-logo__red-logo {
+		opacity: 0;
+			min-width: 100px;
+			max-width: 500px;
+			-webkit-animation: fade 3s infinite linear;
+			        animation: fade 3s infinite linear;
+			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    				animation-iteration-count: 1;
+		}
+
+.animated-logo__fill {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+}
+
+  
+.animated-logo__backfill {
+	
+	-webkit-animation: backfade 4s infinite linear;
+			        animation: backfade 4s infinite linear;
+			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    				animation-iteration-count: 1;	
+    				animation-fill-mode: forwards;	
+		}
+
+@keyframes fade {
+		0% {
+			opacity: 0;
+			-webkit-transform: scale(0.5);
+			        transform: scale(0.5);
+		}
+		60% {
+			opacity: 1;
+			-webkit-transform: scale(1);
+			        transform: scale(1);
+		}
+		75% {
+			opacity: 1;
+			-webkit-transform: scale(1);
+					transform: scale(1);
+		}
+  		100% {
+    		opacity: 0;
+  		}
+	}
+
+@keyframes backfade {
+	0% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		}
+}
