@@ -1,6 +1,6 @@
 .animated-logo__logo {
 		position: absolute;
-		z-index: 2;
+		z-index: 3;
 		top: 20%;
 		left: 30%;
 		width: 25%;
@@ -31,12 +31,35 @@
   
 .animated-logo__backfill {
 	
-	-webkit-animation: backfade 4s infinite linear;
-			        animation: backfade 4s infinite linear;
+	-webkit-animation: backfade 25s infinite linear;
+			        animation: backfade 25s infinite linear;
 			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
     				animation-iteration-count: 1;	
     				animation-fill-mode: forwards;	
 		}
+
+.animated-logo__video {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.animated-logo__video-intro {
+	margin: auto;
+	width: 100%;
+	opacity: 0;
+	-webkit-animation: appear 23s infinite linear;
+          animation: appear 23s infinite linear;
+      -webkit-animation-iteration-count: 1;
+              animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+}
 
 @keyframes fade {
 		0% {
@@ -63,10 +86,28 @@
 	0% {
 		opacity: 1;
 	}
-	60% {
+	90% {
 		opacity: 1;
 	}
 	100% {
 		opacity: 0;
 		}
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  17% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
