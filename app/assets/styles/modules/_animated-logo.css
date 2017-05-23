@@ -41,18 +41,30 @@
 .animated-logo__video {
 	position: fixed;
 	z-index: 2;
-	top: 0;
+	top: 2rem;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	margin: 0;
+
+	@mixin forTabletLandscape {
+		top: 0rem;
+	}
+
+	@mixin forDesktop {
+		top: -4rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 }
 
 .animated-logo__video-intro {
 	margin: auto;
 	width: 100%;
 	opacity: 0;
-	-webkit-animation: appear 23s infinite linear;
-          animation: appear 23s infinite linear;
+	-webkit-animation: appear 22s infinite linear;
+          animation: appear 22s infinite linear;
       -webkit-animation-iteration-count: 1;
               animation-iteration-count: 1;
       -webkit-animation-fill-mode: forwards;
@@ -104,7 +116,7 @@
   17% {
     opacity: 1;
   }
-  99% {
+  98% {
     opacity: 1;
   }
   100% {

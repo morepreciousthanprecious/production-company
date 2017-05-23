@@ -11,6 +11,10 @@
 		@mixin forTabletLandscape {
 			margin-right: -32px;
 		}
+
+		@mixin forDesktop {
+			margin-right: -12px;
+		}
 	}
 
 	&--gutters > div {
@@ -18,6 +22,10 @@
 
 		@mixin forTabletLandscape {
 			padding-right: 32px;
+		}
+
+		@mixin forDesktop {
+			padding-right: 12px;
 		}
 	}
 

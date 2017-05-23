@@ -1,7 +1,7 @@
 .project-item {
 	color: #ffffff;
 	padding-left: 0px;
-	background-color: $darkGrey;
+	background-color: $wrRedTrans;
 	margin-top: 20px;
 	margin-bottom: 30px;
 
@@ -10,17 +10,25 @@
 	&__item-title {
 		color: #ffffff;
 		font-weight: 200;
-		font-size: 2rem;
+		font-size: 1.4rem;
 		text-align: center;
-		background-color: ;
-		padding-top: 24px;
+		background-color: $wrRed;
+		padding-top: 14px;
 		padding-bottom: 12px;
-		margin-top: -3px;
-		filter: drop-shadow(2px 1px 1px #000000);
-
+		margin-top: -4px;
+		
 		@mixin forTabletPortrait {
 			text-align: left;
-			padding-left: 12px;
+			padding-left: 1.4rem;
+		}
+
+		@mixin forTabletLandscape {
+			font-size: 1.4rem;
+		}
+
+		@mixin forDesktop {
+			font-size: 1.4rem;
+			padding-top: 16px;
 		}
 	}
 
@@ -31,8 +39,12 @@
 		padding-bottom: 20px;
 		max-height: 100px;
 
+		@mixin forTabletLandscape {
+			max-height: 75px;
+		}
+
 		&-wgh {
-			transform: translateY(-19%);
+			margin-bottom: 20px;
 		}
 
 		&-ph {
@@ -48,33 +60,64 @@
 
 		&-abh {
 			margin-bottom: 20px;
-
 			@mixin forTabletLandscape {
+				max-height: 100px;
 				transform: translateY(-4%);
 			}
+
 			@mixin forDesktop {
-				transform: translateY(24%);
+				padding-top: 30px;
 			}
+		}
+
+		&-tw {
+			margin-bottom: 20px;
+
+			@mixin forTabletLandscape {
+				margin-top: 75px;
+			}
+
 		}
 
 		&--pm {
 			margin-bottom: 20px;
 
 			@mixin forTabletLandscape {
-				margin-bottom: 21px;
+				margin-top: 34px;
 			}
 		}
 
 		&--wm {
 			margin-bottom: 20px;
+
+			@mixin forTabletLandscape {
+				margin-top: 75px;
+			}
+		}
+
+		&--cs {
+			margin-bottom: 20px;
+
+			@mixin forDesktop {
+				margin-top: 5.3rem;
+			}
+		}
+
+		&--ted {
+			margin-bottom: 20px;
+
+			@mixin forTabletLandscape {
+				margin-top: 3rem;
+			}
 		}
 
 	}
 
 	&__item-desc {
-		padding-left: 10px;
-		padding-right: 12px;
+		padding-left: 14px;
+		padding-right: 14px;
 		margin-top: -1rem;
+		color: $darkGrey;
 	}
 
 	&__item-desc--sub {
@@ -96,16 +139,46 @@
 			padding-top: 2.78rem;
 
 			@mixin forTabletLandscape {
-				padding-top: 5.2rem;
+				padding-top: 4.6rem;
 			}
 		}
 
 		&--pm {
 			padding-top: 4.55rem;
+
+			@mixin forTabletLandscape {
+				padding-top: 5.8rem;
+			}
+
+			@mixin forDesktop {
+				padding-top: 6.2rem;
+			}
 		}
 
 		&--wm {
 			padding-top: 6.3rem;
+
+			@mixin forTabletLandscape {
+				padding-top: 8.5rem;
+			}
+		}
+
+		&--cs {
+			padding-top: 3rem;
+
+			@mixin forTabletPortrait {
+				padding-top: 4rem;
+			}
+
+			@mixin forDesktop {
+				padding-top: 8.2rem;
+			}
+		}
+	}
+
+	&--fourth {
+		@mixin forDesktop {
+			display: none;
 		}
 	}
 }
