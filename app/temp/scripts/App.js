@@ -10437,7 +10437,7 @@ var RevealOnScroll = function () {
 					handler: function handler() {
 						(0, _jquery2.default)(currentItem).addClass("reveal-item__up--is-visible");
 					},
-					offset: "75%"
+					offset: "100%"
 				});
 			});
 		}

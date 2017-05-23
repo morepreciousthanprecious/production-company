@@ -24,8 +24,14 @@
 	&__narrow {
 		overflow: hidden;
 
+		@mixin forTabletPortrait {
+			max-width: 700px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
 		@mixin forTabletLandscape {
-			max-width: 1000px;
+			max-width: 900px;
 			margin-right: auto;
 			margin-left: auto;
 		}

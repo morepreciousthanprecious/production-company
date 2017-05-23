@@ -1,7 +1,7 @@
 .reveal-item__up {
 	opacity: 0;
-	transform: translateY(100px);
-	transition: all .5s ease-out;
+	transform: translateX(100px);
+	transition: all 1.5s ease-out;
 
 	&--is-visible {
 		opacity: 1;

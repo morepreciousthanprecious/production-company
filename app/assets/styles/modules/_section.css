@@ -1,5 +1,5 @@
 .section {
-	border-top: 2rem solid $xlightGrey;
+	border-top: 3rem solid $xlightGrey;
 	margin-bottom: 10rem;
 
 	&__more {
@@ -21,6 +21,7 @@
 		font-size: 3rem;
 		margin-bottom: 6rem;
 		margin-top: 3rem;
+		filter: drop-shadow(1px 0px 1px $lightGrey);
 
 
 		@mixin forTabletLandscape {
