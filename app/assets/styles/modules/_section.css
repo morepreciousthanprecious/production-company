@@ -82,6 +82,11 @@
 			font-size: .85rem;
 			line-height: 1.2rem;
 		}
+
+		&--center {
+			text-align: center;
+			font-weight: 300;
+		}
 	}
 
 	&__xsmall-paragraph {

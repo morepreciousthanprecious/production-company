@@ -722,6 +722,11 @@ a {
 	}
 	}
 
+.section__small-paragraph--center {
+			text-align: center;
+			font-weight: 300;
+		}
+
 .section__xsmall-paragraph {
 		font-weight: 300;
 		font-size: .8rem;
@@ -1701,7 +1706,7 @@ a {
 
 .press li > img {
 			max-width: 125px;
-			padding: 30px;
+			padding: 20px;
 			margin: 0 8px
 
 	}
@@ -1752,7 +1757,7 @@ a {
 	}
 
 .animated-logo__fill {
-		position: fixed;
+		position: absolute;
 		z-index: 1;
 		top: 0;
 		left: 0;
@@ -1771,7 +1776,7 @@ a {
 		}
 
 .animated-logo__video {
-	position: fixed;
+	position: absolute;
 	z-index: 2;
 	top: 2rem;
 	left: 0;

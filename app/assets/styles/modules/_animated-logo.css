@@ -27,7 +27,7 @@
 }
 
 .animated-logo__fill {
-		position: fixed;
+		position: absolute;
 		z-index: 1;
 		top: 0;
 		left: 0;
@@ -46,7 +46,7 @@
 		}
 
 .animated-logo__video {
-	position: fixed;
+	position: absolute;
 	z-index: 2;
 	top: 2rem;
 	left: 0;
