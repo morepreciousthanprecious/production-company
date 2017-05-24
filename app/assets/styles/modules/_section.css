@@ -1,6 +1,7 @@
 .section {
 	border-top: 3rem solid $xlightGrey;
 	margin-bottom: 10rem;
+	z-index: 95;
 
 	&__more {
 		font-weight: 300;

@@ -8,6 +8,7 @@
 	margin-bottom: 12rem;
 	filter: drop-shadow(1px 0px 1px $lightGrey);
 
+
 	@mixin forTabletPortrait {
 		margin-bottom: 17rem;
 	}

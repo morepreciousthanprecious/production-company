@@ -618,6 +618,7 @@ a {
 .section {
 	border-top: 3rem solid rgba(0, 0, 0, .05);
 	margin-bottom: 10rem;
+	z-index: 95;
 }
 
 .section__more {
@@ -1857,30 +1858,61 @@ a {
 @-webkit-keyframes backfade {
 	0% {
 		opacity: 1;
+
+		-webkit-transform: scale(1);
+			transform: scale(1);
 	}
 	90% {
 		opacity: 1;
+
+		-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+	95% {
+		opacity: 0;
+		-webkit-transform: scale(1);
+			transform: scale(1);
 	}
 	100% {
 		opacity: 0;
+
+		-webkit-transform: scale(0.1);
+			transform: scale(0.1);
 		}
 }
 
 @keyframes backfade {
 	0% {
 		opacity: 1;
+
+		-webkit-transform: scale(1);
+			transform: scale(1);
 	}
 	90% {
 		opacity: 1;
+
+		-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+	95% {
+		opacity: 0;
+		-webkit-transform: scale(1);
+			transform: scale(1);
 	}
 	100% {
 		opacity: 0;
+
+		-webkit-transform: scale(0.1);
+			transform: scale(0.1);
 		}
 }
 
 @-webkit-keyframes appear {
   0% {
+  	z-index: 6;
     opacity: 0;
+    -webkit-transform: scale(1);
+			transform: scale(1);
   }
   15% {
     opacity: 0;
@@ -1888,17 +1920,26 @@ a {
   17% {
     opacity: 1;
   }
-  98% {
+  99% {
+  	z-index: 6;
     opacity: 1;
+    -webkit-transform: scale(1);
+			transform: scale(1);
   }
   100% {
+  	z-index: 2;
     opacity: 0;
+    -webkit-transform: scale(0.1);
+			transform: scale(0.1);
   }
 }
 
 @keyframes appear {
   0% {
+  	z-index: 6;
     opacity: 0;
+    -webkit-transform: scale(1);
+			transform: scale(1);
   }
   15% {
     opacity: 0;
@@ -1906,11 +1947,17 @@ a {
   17% {
     opacity: 1;
   }
-  98% {
+  99% {
+  	z-index: 6;
     opacity: 1;
+    -webkit-transform: scale(1);
+			transform: scale(1);
   }
   100% {
+  	z-index: 2;
     opacity: 0;
+    -webkit-transform: scale(0.1);
+			transform: scale(0.1);
   }
 }
 
