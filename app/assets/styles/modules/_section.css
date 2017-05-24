@@ -65,7 +65,7 @@
 
 	&__small-paragraph {
 		font-weight: 300;
-		font-size: .85rem;
+		font-size: .7rem;
 		line-height: 1.25rem;
 		text-align: justify;
 
@@ -74,7 +74,7 @@
 		}
 
 		@mixin forTabletLandscape {
-			font-size: .7rem;
+			font-size: .85rem;
 		}
 
 		@mixin forDesktop {

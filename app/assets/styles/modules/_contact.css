@@ -1,0 +1,143 @@
+.contact {
+	margin-top: 2rem;
+	text-align: center;
+
+	@mixin forTabletPortrait {
+		margin-top: 3rem;
+	}
+
+	@mixin forTabletLandscape {
+		margin-top: 4rem;
+	}
+
+	&__form {
+		width: 78.333%;
+		margin: 0 auto;
+
+		@mixin forTabletLandscape {
+			width: 58.333%;
+		}
+
+		&--field {
+			width: 100%;
+			position: relative;
+			margin-bottom: 15px;
+		}
+
+		&--field label {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: $darkGrey;
+			color: #fff;
+			width: 100%;
+			padding: 18px 0;
+			font-size: 1rem;
+			font-weight: 300;
+			letter-spacing: 0.075em;
+			-webkit-transition: all 333ms ease-in-out;
+			-o-transition: all 333ms ease-in-out;
+			-ms-transition: all 333ms ease-in-out;
+			transition: all 333ms ease-in-out;
+		}
+
+		&--field label + span {
+			opacity: 0;
+			color: #fff;
+			display: block;
+			position: absolute;
+			top: 12px;
+			left: 7%;
+			font-size: 1rem;
+			text-shadow: 1px 2px 0 $lightGrey;
+			-webkit-transition: all 333ms ease-in-out;
+			-moz-transition: all 333ms ease-in-out;
+			-o-transition: all 333ms ease-in-out;
+			-ms-transition: all 333ms ease-in-out;
+			transition: all 333ms ease-in-out;
+		}
+
+		&--field input[type="text"], textarea {
+			border: none;
+			background: $wrRedTrans;
+			width: 80.5%;
+			margin: 0;
+			padding: 18px 0;
+			padding-left: 19.5%;
+			color: $darkGrey;
+			font-size: 1rem;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+		}
+
+		&--field input[type="text"]#msg, textarea#msg {
+			height: 18px;
+			resize: none;
+			-webkit-transition: all 333ms ease-in-out;
+		    -moz-transition: all 333ms ease-in-out;
+	    	-o-transition: all 333ms ease-in-out;
+			-ms-transition: all 333ms ease-in-out;
+			transition: all 333ms ease-in-out;
+		}
+
+		&--field input[type="text"]:focus, 
+		input[type="text"].focused, 
+		textarea:focus, textarea.focused {
+			outline: none;
+		}
+
+		&--field input[type="text"]:focus#msg,
+		input[type="text"].focused#msg,
+		textarea:focus#msg,
+		textarea.focused#msg {
+			padding-bottom: 150px;
+		}
+
+		&--field input[type="text"]:focus + label,
+		input[type="text"].focused + label,
+		textarea:focus + label,
+		textarea.focused + label {
+			width: 18%;
+			background: $wrRed;
+			color: #fff;
+		}
+
+		&--field input[type="text"].focused + label,
+		textarea.focused + label {
+			color: $wrRed;
+		}
+
+		&--field:hover label {
+			width: 18%;
+			background: $wrRed;
+			color: #fff;
+		}
+
+		&--field input[type="submit"] {
+			background: $darkGrey;
+			margin-top: 15px;
+			color: #fff;
+			-webkit-appearance: none;
+			border: none;
+			position: relative;
+			padding: 13px 50px;
+			letter-spacing: 0.1em;
+			font-weight: 300;
+			-webkit-transition: all 333ms ease-in-out;
+ 			-moz-transition: all 333ms ease-in-out;
+            -o-transition: all 333ms ease-in-out;
+            -ms-transition: all 333ms ease-in-out;
+  			transition: all 333ms ease-in-out;
+		}
+
+		&--field input[type="submit"]:hover {
+			background: $wrRed;
+			color: #fff;
+		}
+
+		&--field input[type="submit"]:focus {
+			outline: none;
+			background: $lightGrey;
+		}
+	}
+}

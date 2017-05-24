@@ -1,5 +1,5 @@
-const animatedLogo = document.getElementById("introVideo");
-animatedLogo.addEventListener("canplay", () => {
+var animatedLogo = document.getElementById("introVideo");
+introVideo.addEventListener("canplay", () => {
   setTimeout(() => {
     video.play();
   }, 4000);

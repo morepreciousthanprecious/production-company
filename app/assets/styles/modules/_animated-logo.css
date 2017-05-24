@@ -2,8 +2,8 @@
 		position: absolute;
 		z-index: 3;
 		top: 20%;
-		left: 30%;
-		width: 25%;
+		left: 37.5%;
+		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
 }
@@ -11,13 +11,20 @@
 
 .animated-logo__red-logo {
 		opacity: 0;
-			min-width: 100px;
+		width: 25%;
+			min-width: 125px;
 			max-width: 500px;
 			-webkit-animation: fade 3s infinite linear;
 			        animation: fade 3s infinite linear;
 			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
     				animation-iteration-count: 1;
-		}
+
+    	@mixin forTabletPortrait {
+    		margin-top: -4rem;
+    		min-width: 250px;
+    		max-width: 550px;
+    	}
+}
 
 .animated-logo__fill {
 		position: fixed;

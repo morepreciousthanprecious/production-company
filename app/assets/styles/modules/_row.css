@@ -53,7 +53,7 @@
 		}
 
 		&__medium-12 {
-			float: left;
+			margin: auto;
 			width: 100%;
 		}
 	}
