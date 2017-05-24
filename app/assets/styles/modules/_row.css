@@ -1,4 +1,13 @@
 .row {
+	&--xsmall-3 {
+		float: left;
+		width: 25%;
+	}
+	&--xsmall-9 {
+		float: left;
+		width: 75%;
+	}
+
 	&--t-padding {
 		padding-top: 120px;
 	}
@@ -30,13 +39,29 @@
 	}
 
 	@mixin forTabletPortrait {
+		&__small-3 {
+			float: left;
+			width: 25%;
+		}
+
 		&__small-4 {
 			float: left;
 			width: 33.3%;
 		}
+
+		&__small-9 {
+			float: left;
+			width: 75%;
+		}
+
 	}
 
 	@mixin forTabletLandscape {
+		&__medium-3 {
+			float: left;
+			width: 25%;
+		}
+
 		&__medium-4 {
 			float: left;
 			width: 33.3%;
@@ -51,6 +76,7 @@
 			float: left;
 			width: 66.6%;
 		}
+
 
 		&__medium-12 {
 			margin: auto;

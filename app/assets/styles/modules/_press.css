@@ -20,7 +20,7 @@
 
 		&--light {
 			padding-top: 16px;
-			background-color: $wrRedTrans;
+			background-color: #fff;
 		}
 
 		&--icons {

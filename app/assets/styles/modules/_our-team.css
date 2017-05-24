@@ -17,7 +17,7 @@
 
 	&__heading {
 		color: #ffffff;
-		background-color: $darkGrey;
+		background-color: $wrRed;
 		margin-left: -20px;
 		margin-right: -20px;
 		padding-bottom: 1px;
@@ -61,7 +61,7 @@
 	}
 
 	&__small-paragraph {
-		background-color: $lightGrey;
+		background-color: $xlightGrey;
 		font-weight: 300;
 		font-size: .75rem;
 		line-height: 1rem;
@@ -80,7 +80,9 @@
 		}
 
 		@mixin forTabletLandscape {
-			background-color: $lightGrey;
+			background-color: $xlightGrey;
+
+			border-top: none;
 			font-weight: 300;
 			font-size: .75rem;
 			line-height: 1rem;

@@ -1,8 +1,9 @@
 .landing-text {
 	color: $darkGrey;
+	background-color: $wrRed;
 	position: relative;
 	transform: translateY(5rem);
-	text-align: right;
+	text-align: left;
 	margin-right: .5rem;
 	margin-left: .5rem;
 	margin-bottom: 12rem;
@@ -28,19 +29,27 @@
 		font-weight: 300;
 		font-size: 2.6rem;
 		padding-top: 42px;
+		margin-left: .2rem;
+		margin-bottom: 3rem;
 
 		@mixin forTabletPortrait {
-			font-size: 3.6rem;
-			margin-top: 5rem;
+			font-size: 2rem;
+			margin-top: 3rem;
+			float: right;
+			margin-bottom: 20rem;
+			margin-left: 2rem;
 		}
 
 		@mixin forTabletLandscape {
-			font-size: 4rem;
+			margin-top: 8rem;
+			font-size: 3rem;
+			margin-left: 3rem;
 		}
 
 		@mixin forDesktop {
-			font-size: 5rem;
-			margin-top: 7rem;
+			font-size: 4rem;
+			margin-top: 6rem;
+			margin-left: 4rem;
 		}
 
 		&--center {
@@ -56,12 +65,13 @@
 	}
 
 	&__subtitle {
-		font-size: 1.25rem;
+		font-size: .85rem;
 		font-weight: 300;
 		margin-bottom: 3rem;
 
 		@mixin forTabletPortrait {
-			font-size: 1.789rem;
+			font-size: 1.2rem;
+			margin-bottom: 20rem;
 		}
 
 		@mixin forTabletLandscape {
@@ -70,6 +80,31 @@
 
 		@mixin forDesktop {
 			font-size: 2.4rem;
+		}
+	}
+
+	&__logo {
+		float: left;
+		max-height: 100px;
+		margin: 0;
+
+		@mixin forTabletPortrait {
+			margin-top: 5.6rem;
+			max-height: 140px;
+		}
+
+		@mixin forTabletLandscape {
+			max-height: 250px;
+			margin-top: 142px;
+		}
+
+		@mixin forDesktop {
+			max-height: 350px;
+			margin-top: 150px;
+		}
+
+		&--index {
+			display: none;
 		}
 	}
 

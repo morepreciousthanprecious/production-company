@@ -472,10 +472,11 @@ a {
 
 .landing-text {
 	color: #4D4D4D;
+	background-color: #EF5035;
 	position: relative;
 	-webkit-transform: translateY(5rem);
 	        transform: translateY(5rem);
-	text-align: right;
+	text-align: left;
 	margin-right: .5rem;
 	margin-left: .5rem;
 	margin-bottom: 12rem;
@@ -510,28 +511,36 @@ a {
 		font-weight: 300;
 		font-size: 2.6rem;
 		padding-top: 42px;
+		margin-left: .2rem;
+		margin-bottom: 3rem;
 	}
 
 @media (min-width: 650px) {
 
 .landing-text__title {
-			font-size: 3.6rem;
-			margin-top: 5rem
+			font-size: 2rem;
+			margin-top: 3rem;
+			float: right;
+			margin-bottom: 20rem;
+			margin-left: 2rem
 	}
 	}
 
 @media (min-width: 900px) {
 
 .landing-text__title {
-			font-size: 4rem
+			margin-top: 8rem;
+			font-size: 3rem;
+			margin-left: 3rem
 	}
 	}
 
 @media (min-width: 1200px) {
 
 .landing-text__title {
-			font-size: 5rem;
-			margin-top: 7rem
+			font-size: 4rem;
+			margin-top: 6rem;
+			margin-left: 4rem
 	}
 	}
 
@@ -550,7 +559,7 @@ a {
 	}
 
 .landing-text__subtitle {
-		font-size: 1.25rem;
+		font-size: .85rem;
 		font-weight: 300;
 		margin-bottom: 3rem;
 	}
@@ -558,7 +567,8 @@ a {
 @media (min-width: 650px) {
 
 .landing-text__subtitle {
-			font-size: 1.789rem
+			font-size: 1.2rem;
+			margin-bottom: 20rem
 	}
 	}
 
@@ -575,6 +585,40 @@ a {
 			font-size: 2.4rem
 	}
 	}
+
+.landing-text__logo {
+		float: left;
+		max-height: 100px;
+		margin: 0;
+	}
+
+@media (min-width: 650px) {
+
+.landing-text__logo {
+			margin-top: 5.6rem;
+			max-height: 140px
+	}
+	}
+
+@media (min-width: 900px) {
+
+.landing-text__logo {
+			max-height: 250px;
+			margin-top: 142px
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.landing-text__logo {
+			max-height: 350px;
+			margin-top: 150px
+	}
+	}
+
+.landing-text__logo--index {
+			display: none;
+		}
 
 .landing-text a {
 		color: #4D4D4D;
@@ -843,6 +887,16 @@ a {
 	}
 	}
 
+.row--xsmall-3 {
+		float: left;
+		width: 25%;
+	}
+
+.row--xsmall-9 {
+		float: left;
+		width: 75%;
+	}
+
 .row--t-padding {
 		padding-top: 120px;
 	}
@@ -890,13 +944,28 @@ a {
 	}
 
 @media (min-width: 650px) {
+		.row__small-3 {
+			float: left;
+			width: 25%;
+		}
+
 		.row__small-4 {
 			float: left;
 			width: 33.3%;
 		}
+
+		.row__small-9 {
+			float: left;
+			width: 75%;
+		}
 	}
 
 @media (min-width: 900px) {
+		.row__medium-3 {
+			float: left;
+			width: 25%;
+		}
+
 		.row__medium-4 {
 			float: left;
 			width: 33.3%;
@@ -911,6 +980,7 @@ a {
 			float: left;
 			width: 66.6%;
 		}
+
 
 		.row__medium-12 {
 			margin: auto;
@@ -996,7 +1066,7 @@ a {
 .project-item {
 	color: #ffffff;
 	padding-left: 0px;
-	background-color: rgba(239, 80, 53, .5);
+	background-color: rgba(0, 0, 0, .05);
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
@@ -1041,6 +1111,7 @@ a {
 		margin-right: 10px;
 		padding-bottom: 20px;
 		max-height: 100px;
+		opacity: .5;
 
 	}
 
@@ -1310,7 +1381,7 @@ a {
 
 .our-team__heading {
 		color: #ffffff;
-		background-color: #4D4D4D;
+		background-color: #EF5035;
 		margin-left: -20px;
 		margin-right: -20px;
 		padding-bottom: 1px;
@@ -1364,7 +1435,7 @@ a {
 	}
 
 .our-team__small-paragraph {
-		background-color: rgba(0, 0, 0, .15);
+		background-color: rgba(0, 0, 0, .05);
 		font-weight: 300;
 		font-size: .75rem;
 		line-height: 1rem;
@@ -1386,7 +1457,9 @@ a {
 @media (min-width: 900px) {
 
 .our-team__small-paragraph {
-			background-color: rgba(0, 0, 0, .15);
+			background-color: rgba(0, 0, 0, .05);
+
+			border-top: none;
 			font-weight: 300;
 			font-size: .75rem;
 			line-height: 1rem;
@@ -1443,7 +1516,7 @@ a {
 }
 
 .site-header--p-top {
-		padding-top: 2px;
+		padding-top: 9px;
 		margin-left: -8px;
 	}
 
@@ -1451,11 +1524,29 @@ a {
 		display: none;
 	}
 
+.site-header--icon {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+.site-header--logo {
+		margin-bottom: .55rem;
+		margin-top: 10px;
+	}
+
+.site-header--logo-p-top {
+			margin-top: 12px;
+		}
+
+.site-header--logo-index {
+			display: none;
+		}
+
 .site-header__menu-icon {
 		width: 20px;
 		height: 20px;
 		position: absolute;
-		top: 18px;
+		top: 28px;
 		right: 18px;
 	}
 
@@ -1616,7 +1707,7 @@ a {
 
 .press__block--light {
 			padding-top: 16px;
-			background-color: rgba(239, 80, 53, .5);
+			background-color: #fff;
 		}
 
 .press__block--icons {
@@ -2033,7 +2124,7 @@ a {
 
 .contact__form--field input[type="text"], .contact__form textarea {
 			border: none;
-			background: rgba(239, 80, 53, .5);
+			background: rgba(239, 80, 53, .75);
 			width: 80.5%;
 			margin: 0;
 			padding: 18px 0;
