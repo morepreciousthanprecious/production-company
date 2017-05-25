@@ -36,6 +36,10 @@
 		}
 	}
 
+	&--index {
+		padding-top: 1rem;
+	}
+
 	&__menu-icon {
 		width: 20px;
 		height: 20px;
@@ -80,6 +84,14 @@
 		@mixin forTabletPortrait {
 			display: none;
 		}
+
+		&-index {
+			padding-bottom: 100px;
+		}
+	}
+
+	&__menu-icon--index {
+
 	}
 
 	&__menu-icon--close-x {

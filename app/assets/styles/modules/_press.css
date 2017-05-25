@@ -1,10 +1,23 @@
 .press {
-	background-color: $wrRed;
 	margin-bottom: 30px;
+	color: $darkGrey;
 
 	a {
 		color: $darkGrey;
 		font-weight: 300;
+	}
+
+	&__heading--large {
+		font-weight: 300;
+		font-size: 2rem;
+		padding: 10px;
+		text-align: center;
+	}
+
+	&__heading--med {
+		font-weight: 300;
+		font-size: 1.4rem;
+		padding: 5px;
 	}
 
 	blockquote {
@@ -31,9 +44,8 @@
 	}
 
 	&__block-source {
-		color: #ffffff;
-		float: right;
-		text-align: right;
+
+		text-align: center;
 		padding-right: 36px;
 		padding-bottom: 20px;
 		font-size: .85rem;
@@ -41,6 +53,10 @@
 
 	&__block-name {
 		line-height: 0px;
+	}
+
+	&__icon-source {
+		width: 33.3%;
 	}
 
 	&__icon {

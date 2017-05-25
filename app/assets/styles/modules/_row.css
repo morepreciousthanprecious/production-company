@@ -81,6 +81,12 @@
 		&__medium-12 {
 			margin: auto;
 			width: 100%;
+
+			&--margins {
+				width: 100%;
+				margin-left: 25%;
+				margin-right: 25%;
+			}
 		}
 	}
 

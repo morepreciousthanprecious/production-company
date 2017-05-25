@@ -472,7 +472,6 @@ a {
 
 .landing-text {
 	color: #4D4D4D;
-	background-color: #EF5035;
 	position: relative;
 	-webkit-transform: translateY(5rem);
 	        transform: translateY(5rem);
@@ -509,36 +508,37 @@ a {
 
 .landing-text__title {
 		font-weight: 300;
-		font-size: 2.6rem;
+		font-size: 1.6rem;
 		padding-top: 42px;
-		margin-left: .2rem;
 		margin-bottom: 3rem;
+		text-align: center;
 	}
 
 @media (min-width: 650px) {
 
 .landing-text__title {
 			font-size: 2rem;
-			margin-top: 3rem;
+			margin-top: 2.55rem;
 			float: right;
 			margin-bottom: 20rem;
-			margin-left: 2rem
+			margin-left: 2rem;
+			text-align: left
 	}
 	}
 
 @media (min-width: 900px) {
 
 .landing-text__title {
-			margin-top: 8rem;
-			font-size: 3rem;
-			margin-left: 3rem
+			margin-top: 5.65rem;
+			font-size: 2.7rem;
+			margin-left: 0rem
 	}
 	}
 
 @media (min-width: 1200px) {
 
 .landing-text__title {
-			font-size: 4rem;
+			font-size: 3.4rem;
 			margin-top: 6rem;
 			margin-left: 4rem
 	}
@@ -587,9 +587,10 @@ a {
 	}
 
 .landing-text__logo {
-		float: left;
-		max-height: 100px;
+		float: right;
+		max-height: 200px;
 		margin: 0;
+		margin-bottom: 3rem;
 	}
 
 @media (min-width: 650px) {
@@ -603,7 +604,7 @@ a {
 @media (min-width: 900px) {
 
 .landing-text__logo {
-			max-height: 250px;
+			max-height: 200px;
 			margin-top: 142px
 	}
 	}
@@ -612,7 +613,7 @@ a {
 
 .landing-text__logo {
 			max-height: 350px;
-			margin-top: 150px
+			margin-top: 75px
 	}
 	}
 
@@ -770,6 +771,27 @@ a {
 			text-align: center;
 			font-weight: 300;
 		}
+
+@media (min-width: 650px) {
+
+.section__small-paragraph--center {
+				text-align: center
+		}
+	}
+
+@media (min-width: 900px) {
+
+.section__small-paragraph--center {
+				text-align: center
+		}
+	}
+
+@media (min-width: 1200px) {
+
+.section__small-paragraph--center {
+				text-align: center
+		}
+	}
 
 .section__xsmall-paragraph {
 		font-weight: 300;
@@ -986,6 +1008,12 @@ a {
 			margin: auto;
 			width: 100%;
 		}
+
+			.row__medium-12--margins {
+				width: 100%;
+				margin-left: 25%;
+				margin-right: 25%;
+			}
 	}
 
 @media (min-width: 1200px) {
@@ -1069,7 +1097,20 @@ a {
 	background-color: rgba(0, 0, 0, .05);
 	margin-top: 20px;
 	margin-bottom: 30px;
+	width: 100%;
 }
+
+.project-item__desc {
+		display: none;
+	}
+
+.project-item__desc--is-visible {
+			display: block;
+		}
+
+.project-item__desc--close {
+
+	}
 
 .project-item__item-title {
 		color: #ffffff;
@@ -1542,6 +1583,10 @@ a {
 			display: none;
 		}
 
+.site-header--index {
+		padding-top: 1rem;
+	}
+
 .site-header__menu-icon {
 		width: 20px;
 		height: 20px;
@@ -1600,6 +1645,14 @@ a {
 	}
 	}
 
+.site-header__menu-icon-index {
+			padding-bottom: 100px;
+		}
+
+.site-header__menu-icon--index {
+
+	}
+
 .site-header__menu-icon--close-x::before {
 			-webkit-transform: rotate(45deg) scaleX(1.25);
 			        transform: rotate(45deg) scaleX(1.25);
@@ -1647,24 +1700,39 @@ a {
 	}
 
 .primary-nav li {
+		text-align: center;
 		list-style: none;
-		float: left;
-		padding-right: 20px;
+		
 		padding-top: 15px;
 		padding-bottom: 15px;
+		position: relative;
+		display: block;
 	}
 
 @media (min-width: 650px) {
 
 .primary-nav li {
+			float: left;
+			padding-right: 20px;
 			padding-top: 0;
-			padding-bottom: 0
+			padding-bottom: 15px
+	}
+			.primary-nav li::after {
+		content:"";
+		clear: both;
+		display: table;
 	}
 	}
 
 .primary-nav li:last-child {
-		padding-right: 8px;
 		padding-bottom: 0px;
+	}
+
+@media (min-width: 650px) {
+
+.primary-nav li:last-child {
+			padding-right: 8px
+	}
 	}
 
 .primary-nav a {
@@ -1678,19 +1746,42 @@ a {
 		color: #EF5035;
 	}
 
+.primary-nav__current{
+		color: #EF5035;
+	}
+
 .primary-nav--is-visible {
 		display: block;
+		position: absolute;
 		padding-top: 30px;
+		margin: auto;
+		z-index: 100;
+		background-color: #fff;
+		-webkit-transform: translateX(175%);
+		        transform: translateX(175%);
 	}
 
 .press {
-	background-color: #EF5035;
 	margin-bottom: 30px;
+	color: #4D4D4D;
 }
 
 .press a {
 		color: #4D4D4D;
 		font-weight: 300;
+	}
+
+.press__heading--large {
+		font-weight: 300;
+		font-size: 2rem;
+		padding: 10px;
+		text-align: center;
+	}
+
+.press__heading--med {
+		font-weight: 300;
+		font-size: 1.4rem;
+		padding: 5px;
 	}
 
 .press blockquote {
@@ -1717,9 +1808,8 @@ a {
 		}
 
 .press__block-source {
-		color: #ffffff;
-		float: right;
-		text-align: right;
+
+		text-align: center;
 		padding-right: 36px;
 		padding-bottom: 20px;
 		font-size: .85rem;
@@ -1727,6 +1817,10 @@ a {
 
 .press__block-name {
 		line-height: 0px;
+	}
+
+.press__icon-source {
+		width: 33.3%;
 	}
 
 .press__icon {

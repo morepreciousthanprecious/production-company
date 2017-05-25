@@ -1,6 +1,7 @@
 .primary-nav {
 	display: none;
 
+
 	@mixin forTabletPortrait {
 		display: block;
 
@@ -9,6 +10,7 @@
 		}
 	}
 
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -16,21 +18,29 @@
 	}
 
 	li {
+		text-align: center;
 		list-style: none;
-		float: left;
-		padding-right: 20px;
+		
 		padding-top: 15px;
 		padding-bottom: 15px;
+		position: relative;
+		display: block;
 
 		@mixin forTabletPortrait {
+			float: left;
+			padding-right: 20px;
 			padding-top: 0;
-			padding-bottom: 0;
+			padding-bottom: 15px;
+			@mixin clearfix;
 		}
 	}
 
 	li:last-child {
-		padding-right: 8px;
 		padding-bottom: 0px;
+
+		@mixin forTabletPortrait {
+			padding-right: 8px;
+		}
 	}
 
 	a {
@@ -44,9 +54,18 @@
 		color: $wrRed;
 	}
 
+	&__current{
+		color: $wrRed;
+	}
+
 	&--is-visible {
 		display: block;
+		position: absolute;
 		padding-top: 30px;
+		margin: auto;
+		z-index: 100;
+		background-color: #fff;
+		transform: translateX(175%);
 	}
 	
 }
