@@ -3,21 +3,21 @@
 	padding-left: 0px;
 	background-color: $xlightGrey;
 	margin-top: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	width: 100%;
 
+	&__title {
+		display: inline-block;
+		width: 100%;
+	}
+
 	&__desc {
-		display: none;
+	display: none;
+	margin-top: 1.8rem;
 
 		&--is-visible {
 			display: block;
 		}
-	}
-
-	
-
-	&__desc--close {
-
 	}
 
 	&__item-title {
@@ -57,18 +57,15 @@
 			max-height: 75px;
 		}
 
-		&-wgh {
-			margin-bottom: 20px;
-		}
-
 		&-ph {
-			margin-bottom: 20px;
+			max-height: 75px;
+			margin-right: -10px;
 
 			@mixin forTabletLandscape {
-				transform: translateY(46%);
+				
 			}
 			@mixin forDesktop {
-				transform: translateY(42%);
+				
 			}
 		}
 
@@ -130,76 +127,19 @@
 	&__item-desc {
 		padding-left: 14px;
 		padding-right: 14px;
-		margin-top: -1rem;
+		padding-top: 14px;
+		padding-bottom: 20px;
+		margin-top: -2rem;
+		margin-bottom: 20px;
 		color: $darkGrey;
 	}
 
+
+
+
+
 	&__item-desc--sub {
-		padding-top: 5rem;	 
-
-		&--abh {
-			padding-top: 3.95rem;
-
-			@mixin forTabletLandscape {
-				padding-top: 4.7rem;
-			}
-
-			@mixin forDesktop {
-				padding-top: 6rem;
-			}
-		}
-
-		&--ph {
-			padding-top: 2.78rem;
-
-			@mixin forTabletLandscape {
-				padding-top: 4.6rem;
-			}
-		}
-
-		&--pm {
-			padding-top: 4.55rem;
-
-			@mixin forTabletLandscape {
-				padding-top: 5.8rem;
-			}
-
-			@mixin forDesktop {
-				padding-top: 6.2rem;
-			}
-		}
-
-		&--wm {
-			padding-top: 6.3rem;
-
-			@mixin forTabletLandscape {
-				padding-top: 8.5rem;
-			}
-		}
-
-		&--cs {
-			padding-top: 3rem;
-
-			@mixin forTabletPortrait {
-				padding-top: 4rem;
-			}
-
-			@mixin forDesktop {
-				padding-top: 8.2rem;
-			}
-		}
-
-		&--r3 {
-			padding-bottom: 10px;
-
-			@mixin forTabletLandscape {
-				padding-top: 72px;
-			}
-
-			@mixin forDesktop {
-				padding-top: 64px;
-			}
-		}
+		padding-top: 4.85rem;	 
 	}
 
 	&--fourth {

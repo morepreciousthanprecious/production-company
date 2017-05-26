@@ -32,12 +32,13 @@
 		}
 
 		&-index {
-			display: none;
+			opacity: 0;
 		}
 	}
 
 	&--index {
 		padding-top: 1rem;
+		padding-left: 10px;
 	}
 
 	&__menu-icon {

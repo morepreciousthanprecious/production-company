@@ -60,9 +60,10 @@
 		&--field input[type="text"], textarea {
 			border: none;
 			background: $wrRedTrans;
-			width: 80.5%;
+			width: 100%;
 			margin: 0;
-			padding: 18px 0;
+			padding-top: 19px;
+			padding-bottom: 17px;
 			padding-left: 19.5%;
 			color: $darkGrey;
 			font-size: 1rem;
@@ -72,6 +73,8 @@
 
 		&--field input[type="text"]#msg, textarea#msg {
 			height: 18px;
+			padding-top: 19px;
+			padding-bottom: 35px;
 			resize: none;
 			-webkit-transition: all 333ms ease-in-out;
 		    -moz-transition: all 333ms ease-in-out;
