@@ -43,8 +43,11 @@
 		}
 	}
 
+	&__current{
+		color: $wrRed;
+	}
+
 	a {
-		color: $darkGrey;
 		text-decoration: none;
 		font-weight: 300;
 		font-size: .8rem;
@@ -54,9 +57,7 @@
 		color: $wrRed;
 	}
 
-	&__current{
-		color: $wrRed;
-	}
+
 
 	&--is-visible {
 		display: block;

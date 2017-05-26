@@ -8,16 +8,22 @@
 	}
 
 	&__heading--large {
-		font-weight: 300;
-		font-size: 2rem;
+		font-weight: 400;
+		font-size: 1.6rem;
 		padding: 10px;
 		text-align: center;
+
+		&-p-top {
+			padding-top: 8rem;
+		}
 	}
 
 	&__heading--med {
-		font-weight: 300;
-		font-size: 1.4rem;
+		font-weight: 400;
+		letter-spacing: -1px;
+		font-size: 1.2rem;
 		padding: 5px;
+		text-align: center;
 	}
 
 	blockquote {
@@ -29,7 +35,8 @@
 	}
 
 	&__block {
-		padding-top: 16px;
+		border-bottom: 2px solid $lightGrey;
+		background-color: $xlightGrey;
 
 		&--light {
 			padding-top: 16px;
@@ -40,6 +47,7 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 100%;
+			background-color: $darkGrey;
 		}
 	}
 
@@ -56,7 +64,10 @@
 	}
 
 	&__icon-source {
+		opacity: .5;
 		width: 33.3%;
+		margin-right: 40%;
+		margin-left: 40%;
 	}
 
 	&__icon {
@@ -107,5 +118,9 @@
 			margin: 0 8px;
 		}
 
+	}
+
+	&__img-lg {
+		z-index: 1;
 	}
 }
