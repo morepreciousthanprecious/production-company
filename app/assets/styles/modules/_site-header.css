@@ -39,6 +39,7 @@
 	&--index {
 		padding-top: 1rem;
 		padding-left: 10px;
+		z-index: 99;
 	}
 
 	&__menu-icon {

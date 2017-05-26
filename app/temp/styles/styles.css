@@ -1454,6 +1454,7 @@ a {
 .site-header--index {
 		padding-top: 1rem;
 		padding-left: 10px;
+		z-index: 99;
 	}
 
 .site-header__menu-icon {
@@ -1810,10 +1811,12 @@ a {
 		width: 25%;
 			min-width: 125px;
 			max-width: 500px;
-			-webkit-animation: fade 3s infinite linear;
-			        animation: fade 3s infinite linear;
+			-webkit-animation: fade 7s infinite linear;
+			        animation: fade 7s infinite linear;
 			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
     				animation-iteration-count: 1;
+    		        -webkit-animation-delay: 1s;
+                            animation-delay: 1s;
 }
 
 @media (min-width: 650px) {
@@ -1828,7 +1831,7 @@ a {
 .animated-logo__fill {
 		position: absolute;
 		z-index: 1;
-		top: 0;
+		top: 15%;
 		left: 0;
 		width: 100%;
 
@@ -1836,8 +1839,8 @@ a {
 
 .animated-logo__backfill {
 	
-	-webkit-animation: backfade 25s infinite linear;
-			        animation: backfade 25s infinite linear;
+	-webkit-animation: backfade 8s infinite linear;
+			        animation: backfade 8s infinite linear;
 			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
     				animation-iteration-count: 1;	
     				-webkit-animation-fill-mode: forwards;	
@@ -1877,8 +1880,8 @@ a {
 	margin: auto;
 	width: 100%;
 	opacity: 0;
-	-webkit-animation: appear 22s infinite linear;
-          animation: appear 22s infinite linear;
+	-webkit-animation: appear 5s infinite linear;
+          animation: appear 5s infinite linear;
       -webkit-animation-iteration-count: 1;
               animation-iteration-count: 1;
       -webkit-animation-fill-mode: forwards;
@@ -1893,18 +1896,19 @@ a {
 			-webkit-transform: scale(0.5);
 			        transform: scale(0.5);
 		}
-		60% {
-			opacity: 1;
-			-webkit-transform: scale(1);
-			        transform: scale(1);
+		70% {
+			opacity: 0;
+			-webkit-transform: scale(0.5);
+			        transform: scale(0.5);
 		}
-		75% {
+		80% {
 			opacity: 1;
 			-webkit-transform: scale(1);
 					transform: scale(1);
 		}
   		100% {
     		opacity: 0;
+
   		}
 	}
 
@@ -1914,18 +1918,19 @@ a {
 			-webkit-transform: scale(0.5);
 			        transform: scale(0.5);
 		}
-		60% {
-			opacity: 1;
-			-webkit-transform: scale(1);
-			        transform: scale(1);
+		70% {
+			opacity: 0;
+			-webkit-transform: scale(0.5);
+			        transform: scale(0.5);
 		}
-		75% {
+		80% {
 			opacity: 1;
 			-webkit-transform: scale(1);
 					transform: scale(1);
 		}
   		100% {
     		opacity: 0;
+
   		}
 	}
 
@@ -1988,13 +1993,13 @@ a {
     -webkit-transform: scale(1);
 			transform: scale(1);
   }
-  15% {
-    opacity: 0;
+  1% {
+  	opacity: 1;
   }
   17% {
     opacity: 1;
   }
-  99% {
+  98% {
   	z-index: 6;
     opacity: 1;
     -webkit-transform: scale(1);
@@ -2015,13 +2020,13 @@ a {
     -webkit-transform: scale(1);
 			transform: scale(1);
   }
-  15% {
-    opacity: 0;
+  1% {
+  	opacity: 1;
   }
   17% {
     opacity: 1;
   }
-  99% {
+  98% {
   	z-index: 6;
     opacity: 1;
     -webkit-transform: scale(1);
