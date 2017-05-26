@@ -31,9 +31,13 @@
 .animated-logo__fill {
 		position: absolute;
 		z-index: 1;
-		top: 15%;
+		top: 10%;
 		left: 0;
 		width: 100%;
+
+		@mixin forTabletPortrait {
+			top: 25%;
+		}
 
 }
 
@@ -56,12 +60,8 @@
 	height: 100%;
 	margin: 0;
 
-	@mixin forTabletLandscape {
-		top: 0rem;
-	}
-
 	@mixin forDesktop {
-		top: -4rem;
+		top: 4rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -146,7 +146,9 @@
   98% {
   	z-index: 6;
     opacity: 1;
-    -webkit-transform: scale(1);
+  }
+  99% {
+  	    -webkit-transform: scale(1);
 			transform: scale(1);
   }
   100% {

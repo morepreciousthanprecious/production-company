@@ -519,17 +519,16 @@ a {
 .landing-text__title {
 			font-size: 2rem;
 			margin-top: 2.55rem;
-			float: right;
 			margin-bottom: 20rem;
-			margin-left: 2rem;
-			text-align: left
+			margin-left: 0rem;
+			text-align: center
 	}
 	}
 
 @media (min-width: 900px) {
 
 .landing-text__title {
-			margin-top: 5.65rem;
+			margin-top: 3.65rem;
 			font-size: 2.7rem;
 			margin-left: 0rem
 	}
@@ -538,7 +537,7 @@ a {
 @media (min-width: 1200px) {
 
 .landing-text__title {
-			font-size: 3.4rem;
+			font-size: 3.2rem;
 			margin-top: 6rem;
 			margin-left: 4rem
 	}
@@ -596,8 +595,9 @@ a {
 @media (min-width: 650px) {
 
 .landing-text__logo {
-			margin-top: 5.6rem;
-			max-height: 140px
+			margin-top: 3.6rem;
+			max-height: 200px;
+			margin-bottom: 1rem
 	}
 	}
 
@@ -605,14 +605,14 @@ a {
 
 .landing-text__logo {
 			max-height: 200px;
-			margin-top: 142px
+			margin-top: 42px;
+			margin-bottom: 1rem
 	}
 	}
 
 @media (min-width: 1200px) {
 
 .landing-text__logo {
-			max-height: 350px;
 			margin-top: 75px
 	}
 	}
@@ -940,6 +940,11 @@ a {
 			width: 25%;
 		}
 
+		.row__small-3-landing {
+			float: left;
+			width: 100%;
+		}
+
 		.row__small-4 {
 			float: left;
 			width: 33.3%;
@@ -947,7 +952,7 @@ a {
 
 		.row__small-9 {
 			float: left;
-			width: 75%;
+			width: 100%;
 		}
 	}
 
@@ -955,6 +960,11 @@ a {
 		.row__medium-3 {
 			float: left;
 			width: 25%;
+		}
+
+		.row__medium-3-landing {
+			float: left;
+			width: 100%;
 		}
 
 		.row__medium-4 {
@@ -1075,7 +1085,7 @@ a {
 	}
 
 .project-item__desc {
-	display: none;
+
 	margin-top: 1.8rem;
 	}
 
@@ -1831,11 +1841,19 @@ a {
 .animated-logo__fill {
 		position: absolute;
 		z-index: 1;
-		top: 15%;
+		top: 10%;
 		left: 0;
 		width: 100%;
 
 }
+
+@media (min-width: 650px) {
+
+.animated-logo__fill {
+			top: 25%
+
+}
+	}
 
 .animated-logo__backfill {
 	
@@ -1858,18 +1876,10 @@ a {
 
 }
 
-@media (min-width: 900px) {
-
-.animated-logo__video {
-		top: 0rem
-
-}
-	}
-
 @media (min-width: 1200px) {
 
 .animated-logo__video {
-		top: -4rem;
+		top: 4rem;
 		margin-left: auto;
 		margin-right: auto
 
@@ -2002,7 +2012,9 @@ a {
   98% {
   	z-index: 6;
     opacity: 1;
-    -webkit-transform: scale(1);
+  }
+  99% {
+  	    -webkit-transform: scale(1);
 			transform: scale(1);
   }
   100% {
@@ -2029,7 +2041,9 @@ a {
   98% {
   	z-index: 6;
     opacity: 1;
-    -webkit-transform: scale(1);
+  }
+  99% {
+  	    -webkit-transform: scale(1);
 			transform: scale(1);
   }
   100% {
