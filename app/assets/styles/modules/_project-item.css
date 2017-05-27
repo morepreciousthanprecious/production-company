@@ -48,7 +48,7 @@
 	&__icon {
 		float: right;
 		margin-top: 1rem;
-		margin-right: 10px;
+		margin-right: 12px;
 		padding-bottom: 20px;
 		max-height: 100px;
 		opacity: .5;
@@ -62,27 +62,34 @@
 			margin-right: -10px;
 
 			@mixin forTabletLandscape {
-				
+				margin-top: 32px;
 			}
 			@mixin forDesktop {
-				
+				margin-top: 2rem; 
 			}
 		}
 
 		&-abh {
-			margin-bottom: 20px;
+			margin-bottom: 0px;
+			padding-top: 10px;
 			@mixin forTabletLandscape {
 				max-height: 100px;
 				transform: translateY(-4%);
 			}
 
 			@mixin forDesktop {
-				padding-top: 30px;
+				padding-top: 20px;
 			}
 		}
 
 		&-tw {
-			margin-bottom: 20px;
+			margin-bottom: 10px;
+			padding-top: 10px;
+
+			@mixin forTabletPortrait {
+				margin-bottom: 10px;
+				margin-top: 10px;
+			}
 
 			@mixin forTabletLandscape {
 				margin-top: 75px;
@@ -91,15 +98,17 @@
 		}
 
 		&--pm {
-			margin-bottom: 20px;
+			margin-bottom: 10px;
+			padding-top: 20px;
 
 			@mixin forTabletLandscape {
-				margin-top: 34px;
+				margin-top: 3.1rem;
 			}
 		}
 
 		&--wm {
-			margin-bottom: 20px;
+			margin-bottom: 10px;
+			padding-top: 10px;
 
 			@mixin forTabletLandscape {
 				margin-top: 75px;
@@ -107,10 +116,11 @@
 		}
 
 		&--cs {
-			margin-bottom: 20px;
+			margin-bottom: 0.625rem;
+			padding-top: 0.625rem;
 
 			@mixin forDesktop {
-				margin-top: 5.3rem;
+				margin-top: 6.3rem;
 			}
 		}
 
@@ -139,7 +149,67 @@
 
 
 	&__item-desc--sub {
-		padding-top: 4.85rem;	 
+		padding-top: 4.85rem;
+
+		&--ph {
+			margin-top: -2.4rem;
+
+			@mixin forTabletLandscape {
+				margin-top: -1rem;
+				}
+
+			@mixin forDesktop {
+				margin-top: -1.3rem;
+			}
+		}
+
+		&--abh {
+			margin-top: 1rem;
+		}
+
+		&--tw {
+			margin-top: 1rem;
+
+			@mixin forTabletLandscape {
+				margin-top: 4.5rem;
+			}
+		}	
+
+		&--pm {
+			margin-top: 3.75rem;
+
+			@mixin forTabletLandscape {
+				margin-top: 4.5rem;
+			}
+		} 
+
+		&--wm {
+			margin-top: 30px;
+
+			@mixin forTabletLandscape {
+				margin-top: 5.5rem;
+			}
+
+			@mixin forDesktop {
+				margin-top: 5.2rem;
+			}
+		}
+
+		&--cs {
+			margin-top: 40px;
+
+			@mixin forDesktop {
+				margin-top: 6.9rem;
+			}
+		}
+
+		&--ted {
+			margin-top: 10px;
+
+			@mixin forTabletLandscape {
+				margin-top: 2.5rem;
+			}
+		}
 	}
 
 	&--fourth {

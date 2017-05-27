@@ -7,26 +7,6 @@
 		margin-left: auto;
 		margin-right: auto;
 }
-		
-
-.animated-logo__red-logo {
-		opacity: 0;
-		width: 25%;
-			min-width: 125px;
-			max-width: 500px;
-			-webkit-animation: fade 7s infinite linear;
-			        animation: fade 7s infinite linear;
-			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
-    				animation-iteration-count: 1;
-    		        -webkit-animation-delay: 1s;
-                            animation-delay: 1s;		
-
-    	@mixin forTabletPortrait {
-    		margin-top: -4rem;
-    		min-width: 250px;
-    		max-width: 550px;
-    	}
-}
 
 .animated-logo__fill {
 		position: absolute;
@@ -36,7 +16,7 @@
 		width: 100%;
 
 		@mixin forTabletPortrait {
-			top: 25%;
+			top: 20%;
 		}
 
 }
@@ -44,8 +24,8 @@
   
 .animated-logo__backfill {
 	
-	-webkit-animation: backfade 8s infinite linear;
-			        animation: backfade 8s infinite linear;
+	-webkit-animation: backfade 7.5s infinite linear;
+			        animation: backfade 7.5s infinite linear;
 			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
     				animation-iteration-count: 1;	
     				animation-fill-mode: forwards;	
@@ -54,7 +34,7 @@
 .animated-logo__video {
 	position: absolute;
 	z-index: 2;
-	top: 2rem;
+	top: 3rem;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -124,7 +104,6 @@
 	}
 	100% {
 		opacity: 0;
-
 		-webkit-transform: scale(0.1);
 			transform: scale(0.1);
 		}
@@ -143,11 +122,12 @@
   17% {
     opacity: 1;
   }
-  98% {
+  96% {
   	z-index: 6;
     opacity: 1;
   }
   99% {
+  	opacity: 0;
   	    -webkit-transform: scale(1);
 			transform: scale(1);
   }
