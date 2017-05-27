@@ -18,7 +18,7 @@
 	}
 
 	&__form {
-		width: 78.333%;
+		width: 90%;
 		margin: 0 auto;
 
 		@mixin forTabletLandscape {
@@ -38,14 +38,20 @@
 			background: $darkGrey;
 			color: #fff;
 			width: 100%;
-			padding: 18px 0;
-			font-size: 1rem;
+			padding: 19px 0;
+			font-size: 14px;
 			font-weight: 300;
-			letter-spacing: 0.075em;
+			letter-spacing: 0.065em;
 			-webkit-transition: all 333ms ease-in-out;
 			-o-transition: all 333ms ease-in-out;
 			-ms-transition: all 333ms ease-in-out;
 			transition: all 333ms ease-in-out;
+
+			@mixin forTabletPortrait {
+				font-size: 1rem;
+				padding: 20px 0;
+				letter-spacing: 0.075em;
+			}
 		}
 
 		&--field label + span {
@@ -76,6 +82,11 @@
 			font-size: 1rem;
 			letter-spacing: 0.05em;
 			text-transform: uppercase;
+
+			@mixin forTabletPortrait {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
 		}
 
 		&--field input[type="text"]#msg, textarea#msg {
@@ -88,6 +99,32 @@
 	    	-o-transition: all 333ms ease-in-out;
 			-ms-transition: all 333ms ease-in-out;
 			transition: all 333ms ease-in-out;
+
+			@mixin forTabletPortrait {
+				padding-top: 1.3rem;
+				padding-bottom: 2.3rem;
+			}
+		}
+
+		&--field input[type="text"]#subject, textarea#subject {
+			@mixin forTabletPortrait {
+				padding-top: 1.3rem;
+				padding-bottom: 1.2rem;
+			}
+		}
+
+		&--field input[type="text"]#email, textarea#email {
+			@mixin forTabletPortrait {
+				padding-top: 1.3rem;
+				padding-bottom: 1.2rem;
+			}
+		}
+
+		&--field input[type="text"]#name, textarea#name {
+			@mixin forTabletPortrait {
+				padding-top: 1.3rem;
+				padding-bottom: 1.2rem;
+			}
 		}
 
 		&--field input[type="text"]:focus, 
@@ -102,6 +139,7 @@
 		textarea.focused#msg {
 			padding-bottom: 150px;
 		}
+
 
 		&--field input[type="text"]:focus + label,
 		input[type="text"].focused + label,
@@ -133,11 +171,16 @@
 			padding: 13px 50px;
 			letter-spacing: 0.1em;
 			font-weight: 300;
+			font-size: 14px;
 			-webkit-transition: all 333ms ease-in-out;
  			-moz-transition: all 333ms ease-in-out;
             -o-transition: all 333ms ease-in-out;
             -ms-transition: all 333ms ease-in-out;
   			transition: all 333ms ease-in-out;
+
+  			@mixin forTabletPortrait {
+  				font-size: 1rem;
+  			}
 		}
 
 		&--field input[type="submit"]:hover {

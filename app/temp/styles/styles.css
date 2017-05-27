@@ -2169,7 +2169,7 @@ a {
 	}
 
 .contact__form {
-		width: 78.333%;
+		width: 90%;
 		margin: 0 auto;
 	}
 
@@ -2193,13 +2193,22 @@ a {
 			background: #4D4D4D;
 			color: #fff;
 			width: 100%;
-			padding: 18px 0;
-			font-size: 1rem;
+			padding: 19px 0;
+			font-size: 14px;
 			font-weight: 300;
-			letter-spacing: 0.075em;
+			letter-spacing: 0.065em;
 			-webkit-transition: all 333ms ease-in-out;
 			transition: all 333ms ease-in-out;
 		}
+
+@media (min-width: 650px) {
+
+.contact__form--field label {
+				font-size: 1rem;
+				padding: 20px 0;
+				letter-spacing: 0.075em
+		}
+	}
 
 .contact__form--field label + span {
 			opacity: 0;
@@ -2228,6 +2237,14 @@ a {
 			text-transform: uppercase;
 		}
 
+@media (min-width: 650px) {
+
+.contact__form--field input[type="text"], .contact__form textarea {
+				padding-top: 20px;
+				padding-bottom: 20px
+		}
+	}
+
 .contact__form--field input[type="text"]#msg, .contact__form textarea#msg {
 			height: 18px;
 			padding-top: 19px;
@@ -2236,6 +2253,38 @@ a {
 			-webkit-transition: all 333ms ease-in-out;
 			transition: all 333ms ease-in-out;
 		}
+
+@media (min-width: 650px) {
+
+.contact__form--field input[type="text"]#msg, .contact__form textarea#msg {
+				padding-top: 1.3rem;
+				padding-bottom: 2.3rem
+		}
+	}
+
+@media (min-width: 650px) {
+
+.contact__form--field input[type="text"]#subject, .contact__form textarea#subject {
+				padding-top: 1.3rem;
+				padding-bottom: 1.2rem
+		}
+	}
+
+@media (min-width: 650px) {
+
+.contact__form--field input[type="text"]#email, .contact__form textarea#email {
+				padding-top: 1.3rem;
+				padding-bottom: 1.2rem
+		}
+	}
+
+@media (min-width: 650px) {
+
+.contact__form--field input[type="text"]#name, .contact__form textarea#name {
+				padding-top: 1.3rem;
+				padding-bottom: 1.2rem
+		}
+	}
 
 .contact__form--field input[type="text"]:focus, 
 		.contact__form input[type="text"].focused, 
@@ -2281,9 +2330,17 @@ a {
 			padding: 13px 50px;
 			letter-spacing: 0.1em;
 			font-weight: 300;
+			font-size: 14px;
 			-webkit-transition: all 333ms ease-in-out;
   			transition: all 333ms ease-in-out;
 		}
+
+@media (min-width: 650px) {
+
+.contact__form--field input[type="submit"] {
+  				font-size: 1rem
+		}
+	}
 
 .contact__form--field input[type="submit"]:hover {
 			background: #EF5035;
