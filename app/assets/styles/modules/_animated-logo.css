@@ -1,12 +1,12 @@
 .animated-logo__fill {
 		position: absolute;
 		z-index: 1;
-		top: 0;
+		top: 10%;
 		left: 0;
 		width: 100%;
 
 		@mixin forTabletPortrait {
-			top: 20%;
+			top: 18%;
 		}
 
 }
