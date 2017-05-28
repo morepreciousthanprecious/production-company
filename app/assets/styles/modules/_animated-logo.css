@@ -1,17 +1,7 @@
-.animated-logo__logo {
-		position: absolute;
-		z-index: 3;
-		top: 20%;
-		left: 37.5%;
-		width: 50%;
-		margin-left: auto;
-		margin-right: auto;
-}
-
 .animated-logo__fill {
 		position: absolute;
 		z-index: 1;
-		top: 10%;
+		top: 0;
 		left: 0;
 		width: 100%;
 
@@ -24,8 +14,8 @@
   
 .animated-logo__backfill {
 	
-	-webkit-animation: backfade 7.5s infinite linear;
-			        animation: backfade 7.5s infinite linear;
+	-webkit-animation: backfade 8.5s infinite linear;
+			        animation: backfade 8.5s infinite linear;
 			-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
     				animation-iteration-count: 1;	
     				animation-fill-mode: forwards;	
@@ -52,8 +42,8 @@
 	margin: auto;
 	width: 100%;
 	opacity: 0;
-	-webkit-animation: appear 5s infinite linear;
-          animation: appear 5s infinite linear;
+	-webkit-animation: appear 7s infinite linear;
+          animation: appear 7s infinite linear;
       -webkit-animation-iteration-count: 1;
               animation-iteration-count: 1;
       -webkit-animation-fill-mode: forwards;
@@ -62,27 +52,7 @@
               animation-delay: 1s;
 }
 
-@keyframes fade {
-		0% {
-			opacity: 0;
-			-webkit-transform: scale(0.5);
-			        transform: scale(0.5);
-		}
-		70% {
-			opacity: 0;
-			-webkit-transform: scale(0.5);
-			        transform: scale(0.5);
-		}
-		80% {
-			opacity: 1;
-			-webkit-transform: scale(1);
-					transform: scale(1);
-		}
-  		100% {
-    		opacity: 0;
 
-  		}
-	}
 
 @keyframes backfade {
 	0% {
@@ -98,12 +68,18 @@
 			transform: scale(1);
 	}
 	95% {
-		opacity: 0;
+		opacity: 1;
 		-webkit-transform: scale(1);
 			transform: scale(1);
 	}
+	98% {
+		-webkit-transform: translate(0px,-20px);
+			transform: translate(0px,-20px);
+	}
 	100% {
 		opacity: 0;
+		-webkit-transform: translate(0px,-20px);
+			transform: translate(0px,-20px);
 		-webkit-transform: scale(0.1);
 			transform: scale(0.1);
 		}
