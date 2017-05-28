@@ -31,7 +31,7 @@
 		margin-bottom: 7rem;
 		text-align: center;
 		text-transform: uppercase;
-		letter-spacing: 1px;
+		letter-spacing: 0px;
 		word-spacing: 3px;
 
 		@mixin forTabletPortrait {

@@ -20,8 +20,8 @@
 		color: $darkGrey;
 		font-weight: 300;
 		font-size: 2rem;
-		margin-bottom: 6rem;
-		margin-top: 3rem;
+		margin-bottom: 3rem;
+		margin-top: 6rem;
 		filter: drop-shadow(1px 0px 1px $lightGrey);
 		text-align: center;
 

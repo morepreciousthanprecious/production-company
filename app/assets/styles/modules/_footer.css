@@ -1,8 +1,10 @@
 .footer {
 	background-color: $darkGrey;
-	margin-top: 12rem;
+	margin-top: 6rem;
 	position: absolute;
 	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 
 	&__tiny-txt {
 		color: #ffffff;

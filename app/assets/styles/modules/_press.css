@@ -121,49 +121,43 @@
 
 	ul {
 		display: flex;
-		align-items: center;
 		flex-wrap: wrap;
-		margin-left: -16px;
-		margin-right: 12px;
+		align-items: center;
+		margin-left: -.8rem;
+		margin-right: 1rem;
 		margin-bottom: 24px;
 
 		@mixin forTabletPortrait {
 			flex-wrap: wrap;
-			margin-right: 10px;
-			margin-left: 10px;
+			margin-left: .5rem;
 		}
 
 		@mixin forTabletLandscape {
 			flex-wrap: wrap;
-			margin-left: 10px;
+			margin-left: -10px;
 			margin-right: 10px;
-		}
-
-		@mixin forDesktop {
-			margin-right: -12px;
-			padding-right: 12px;
 		}
 	}
 
 	li {
 		list-style: none;
 		float: left;
-
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	li > img {
 		max-width: 90px;
+		max-height: 90px;
 		padding: 12px;
 
 		@mixin forTabletLandscape {
 			padding: 10px;
-			margin: 0 7px;
 		}
 
 		@mixin forDesktop {
 			max-width: 125px;
 			padding: 20px;
-			margin: 0 8px;
 		}
 
 	}
