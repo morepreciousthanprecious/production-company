@@ -23,6 +23,7 @@
 		margin-bottom: 6rem;
 		margin-top: 3rem;
 		filter: drop-shadow(1px 0px 1px $lightGrey);
+		text-align: center;
 
 
 		@mixin forTabletLandscape {

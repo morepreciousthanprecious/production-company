@@ -91,12 +91,12 @@
 		&__medium-12 {
 			margin: auto;
 			width: 100%;
+		}
 
-			&--margins {
-				width: 100%;
-				margin-left: 25%;
-				margin-right: 25%;
-			}
+		&__medium-12--margins {
+			width: 50%;
+			margin-left: 25%;
+			margin-right: 25%;
 		}
 	}
 
@@ -104,6 +104,12 @@
 		&__large-4 {
 			float: left;
 			width: 33.3%;
+		}
+
+		&__large-6--margins {
+			width: 50%;
+			margin-left: 25%;
+			margin-right: 25%;
 		}
 
 		&__large-12 {
