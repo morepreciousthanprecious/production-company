@@ -2424,3 +2424,54 @@ a {
 			outline: none;
 			background: rgba(0, 0, 0, .15);
 		}
+
+.about__block {
+
+	}
+
+.about__item {
+
+	}
+
+.about ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+
+		margin-left: -2rem;
+		margin-right: 1rem;
+	}
+
+.about li {
+		list-style: none;
+		float: left;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+.about li > img {
+		max-width: 100px;
+		padding: 10px;
+
+	}
+
+@media (min-width: 900px) {
+
+.about li > img {
+			padding: 10px;
+			margin: 0 7px
+
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.about li > img {
+			max-width: 125px;
+			padding: 10px;
+			margin: 0 8px
+
+	}
+	}

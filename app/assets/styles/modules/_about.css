@@ -1,0 +1,42 @@
+.about {
+	
+	&__block {
+
+	}
+
+	&__item {
+
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+
+		margin-left: -2rem;
+		margin-right: 1rem;
+	}
+
+	li {
+		list-style: none;
+		float: left;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	li > img {
+		max-width: 100px;
+		padding: 10px;
+
+		@mixin forTabletLandscape {
+			padding: 10px;
+			margin: 0 7px;
+		}
+
+		@mixin forDesktop {
+			max-width: 125px;
+			padding: 10px;
+			margin: 0 8px;
+		}
+
+	}
+}
