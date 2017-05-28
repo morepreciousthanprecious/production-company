@@ -10423,7 +10423,7 @@ var RevealOnScroll = function () {
 					handler: function handler() {
 						(0, _jquery2.default)(currentItem).addClass("reveal-item__left--is-visible");
 					},
-					offset: "100%"
+					offset: "75%"
 				});
 			});
 		}

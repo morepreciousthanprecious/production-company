@@ -1788,6 +1788,17 @@ a {
 		}
 	}
 
+.press__heading--large-p-top-min {
+			padding-top: 1.2rem;
+		}
+
+@media (min-width: 900px) {
+
+.press__heading--large-p-top-min {
+				padding-top: 4rem
+		}
+	}
+
 .press__heading--med {
 		font-weight: 400;
 		letter-spacing: -1px;

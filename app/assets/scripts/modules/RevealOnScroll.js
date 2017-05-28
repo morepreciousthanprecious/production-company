@@ -20,7 +20,7 @@ class RevealOnScroll {
 				handler: function() {
 					$(currentItem).addClass("reveal-item__left--is-visible");
 				},
-				offset: "100%"
+				offset: "75%"
 			});
 		});
 	}
