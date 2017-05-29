@@ -692,12 +692,17 @@ a {
 	}
 
 .section__more--press {
-		-webkit-transform: translateX(9.85rem);
-		        transform: translateX(9.85rem);
+		-webkit-transform: translateX(12.85rem);
+		        transform: translateX(12.85rem);
 		font-weight: 700;
 	}
 
 @media (min-width: 650px) {
+
+.section__more--press {
+			-webkit-transform: translateX(19.85rem);
+			        transform: translateX(19.85rem)
+	}
 	}
 
 @media (min-width: 900px) {

@@ -18,11 +18,11 @@
 	}
 
 	&__more--press {
-		transform: translateX(9.85rem);
+		transform: translateX(12.85rem);
 		font-weight: 700;
 
 		@mixin forTabletPortrait {
-
+			transform: translateX(19.85rem);
 		}
 
 		@mixin forTabletLandscape {
