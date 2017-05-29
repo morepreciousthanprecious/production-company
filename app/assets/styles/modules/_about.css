@@ -4,8 +4,23 @@
 
 	}
 
-	&__item {
+	&__icon {
+		width: 100%;
+	}
 
+	&__item {
+		list-style: none;
+		float: left;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&__item--webby {
+		list-style: none;
+		padding-left: auto;
+		padding-right: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	ul {
@@ -15,16 +30,10 @@
 		margin-right: 1rem;
 	}
 
-	li {
-		list-style: none;
-		float: left;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
 	li > img {
 		max-width: 100px;
-		padding: 10px;
+		padding: 12px;
+		margin-right: 12px;
 
 		@mixin forTabletLandscape {
 			padding: 10px;

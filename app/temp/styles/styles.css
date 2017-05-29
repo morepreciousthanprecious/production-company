@@ -2433,8 +2433,23 @@ a {
 
 	}
 
-.about__item {
+.about__icon {
+		width: 100%;
+	}
 
+.about__item {
+		list-style: none;
+		float: left;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+.about__item--webby {
+		list-style: none;
+		padding-left: auto;
+		padding-right: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 .about ul {
@@ -2447,16 +2462,10 @@ a {
 		margin-right: 1rem;
 	}
 
-.about li {
-		list-style: none;
-		float: left;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
 .about li > img {
 		max-width: 100px;
-		padding: 10px;
+		padding: 12px;
+		margin-right: 12px;
 
 	}
 
