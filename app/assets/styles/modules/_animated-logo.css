@@ -42,8 +42,8 @@
 	margin: auto;
 	width: 100%;
 	opacity: 0;
-	-webkit-animation: appear 7s infinite linear;
-          animation: appear 7s infinite linear;
+	-webkit-animation: appear 7.25s infinite linear;
+          animation: appear 7.25s infinite linear;
       -webkit-animation-iteration-count: 1;
               animation-iteration-count: 1;
       -webkit-animation-fill-mode: forwards;
@@ -98,7 +98,7 @@
   17% {
     opacity: 1;
   }
-  96% {
+  97% {
   	z-index: 6;
     opacity: 1;
   }

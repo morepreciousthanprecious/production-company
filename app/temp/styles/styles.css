@@ -667,13 +667,13 @@ a {
 .section {
 	border-top: 3rem solid rgba(0, 0, 0, .05);
 	margin-bottom: 10rem;
-	z-index: 95;
+	z-index: 99;
 }
 
 .section__more {
-		font-weight: 300;
+		font-weight: 700;
 		font-size: 1rem;
-		margin-top: 1rem;
+		margin-top: 2rem;
 		margin-bottom: 3rem;
 	}
 
@@ -683,6 +683,37 @@ a {
 			padding-left: 0;
 			padding-right: 0;
 			float: right
+	}
+			.section__more::after {
+		content:"";
+		clear: both;
+		display: table;
+	}
+	}
+
+.section__more--press {
+		-webkit-transform: translateX(9.85rem);
+		        transform: translateX(9.85rem);
+		font-weight: 700;
+	}
+
+@media (min-width: 650px) {
+	}
+
+@media (min-width: 900px) {
+
+.section__more--press {
+			-webkit-transform: translateX(410%);
+			        transform: translateX(410%);
+			float: right
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.section__more--press {
+			-webkit-transform: translateX(585%);
+			        transform: translateX(585%)
 	}
 	}
 
@@ -1362,6 +1393,17 @@ a {
 .project-item__item-desc--sub--ted {
 				margin-top: 2.5rem
 		}
+	}
+
+.project-item--fourth {
+		margin-bottom: 2rem;
+	}
+
+@media (min-width: 900px) {
+
+.project-item--fourth {
+			margin-bottom: 0
+	}
 	}
 
 @media (min-width: 1200px) {
@@ -2045,8 +2087,8 @@ a {
 	margin: auto;
 	width: 100%;
 	opacity: 0;
-	-webkit-animation: appear 7s infinite linear;
-          animation: appear 7s infinite linear;
+	-webkit-animation: appear 7.25s infinite linear;
+          animation: appear 7.25s infinite linear;
       -webkit-animation-iteration-count: 1;
               animation-iteration-count: 1;
       -webkit-animation-fill-mode: forwards;
@@ -2130,7 +2172,7 @@ a {
   17% {
     opacity: 1;
   }
-  96% {
+  97% {
   	z-index: 6;
     opacity: 1;
   }
@@ -2160,7 +2202,7 @@ a {
   17% {
     opacity: 1;
   }
-  96% {
+  97% {
   	z-index: 6;
     opacity: 1;
   }
@@ -2401,7 +2443,6 @@ a {
 		display: flex;
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
-
 		margin-left: -2rem;
 		margin-right: 1rem;
 	}

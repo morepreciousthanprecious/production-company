@@ -1,18 +1,37 @@
 .section {
 	border-top: 3rem solid $xlightGrey;
 	margin-bottom: 10rem;
-	z-index: 95;
+	z-index: 99;
 
 	&__more {
-		font-weight: 300;
+		font-weight: 700;
 		font-size: 1rem;
-		margin-top: 1rem;
+		margin-top: 2rem;
 		margin-bottom: 3rem;
 
 		@mixin forTabletLandscape {
 			padding-left: 0;
 			padding-right: 0;
 			float: right;
+			@mixin clearfix;
+		}
+	}
+
+	&__more--press {
+		transform: translateX(9.85rem);
+		font-weight: 700;
+
+		@mixin forTabletPortrait {
+
+		}
+
+		@mixin forTabletLandscape {
+			transform: translateX(410%);
+			float: right;
+		}
+
+		@mixin forDesktop {
+			transform: translateX(585%);
 		}
 	}
 

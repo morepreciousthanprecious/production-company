@@ -213,6 +213,12 @@
 	}
 
 	&--fourth {
+		margin-bottom: 2rem;
+
+		@mixin forTabletLandscape {
+			margin-bottom: 0;
+		}
+
 		@mixin forDesktop {
 			display: none;
 		}

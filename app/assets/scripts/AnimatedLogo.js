@@ -2,5 +2,5 @@ var animatedLogo = document.getElementById("introVideo");
 introVideo.addEventListener("canplay", () => {
   setTimeout(() => {
     video.play();
-  }, 4000);
+  }, 100);
 });
