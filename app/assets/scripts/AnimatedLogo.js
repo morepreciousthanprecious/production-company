@@ -1,6 +1,11 @@
-var animatedLogo = document.getElementById("introVideo");
-introVideo.addEventListener("canplay", () => {
-  setTimeout(() => {
-    video.play();
-  }, 100);
-});
+window.onload=function(){
+
+	var animatedLogo = document.getElementById("introVideo");
+
+	animatedLogo.addEventListener("canplay", () => {
+	  setTimeout(() => {
+	    video.play();
+	  }, 100);
+	});
+
+}

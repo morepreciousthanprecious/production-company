@@ -74,12 +74,16 @@
 "use strict";
 
 
-var animatedLogo = document.getElementById("introVideo");
-introVideo.addEventListener("canplay", function () {
-  setTimeout(function () {
-    video.play();
-  }, 100);
-});
+window.onload = function () {
+
+	var animatedLogo = document.getElementById("introVideo");
+
+	animatedLogo.addEventListener("canplay", function () {
+		setTimeout(function () {
+			video.play();
+		}, 100);
+	});
+};
 
 /***/ })
 
