@@ -1,10 +1,14 @@
 .video-container {
 	position: relative;
-	padding-bottom: 56.25%;
+	padding-bottom: 56.85%;
 	margin-bottom: 4px; 
-	padding-top: 30px;
+	padding-top: 26.2px;
 	height: 0;
 	overflow: hidden; 
+
+	&--p-top {
+		padding-top: 28px;
+	}
 }
 
 .video-container iframe,

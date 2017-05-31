@@ -2,6 +2,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: #333333;
 	background-color: #ffffff;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 img {
