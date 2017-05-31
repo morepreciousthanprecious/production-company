@@ -18,20 +18,23 @@
 	}
 
 	&__more--press {
-		transform: translateX(12.85rem);
 		font-weight: 700;
+		margin-left: 30%;
+		margin-right: 30%;
 
 		@mixin forTabletPortrait {
-			transform: translateX(19.85rem);
+			margin-left: 40%;
+			margin-right: 40%;
 		}
 
 		@mixin forTabletLandscape {
-			transform: translateX(410%);
-			float: right;
+			margin-left: 33.3%;
+			margin-right: 33.3%;	
 		}
 
 		@mixin forDesktop {
-			transform: translateX(585%);
+			margin-left: 30%;
+			margin-right: 30%;
 		}
 	}
 
