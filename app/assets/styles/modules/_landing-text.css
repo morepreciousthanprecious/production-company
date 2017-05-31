@@ -2,9 +2,6 @@
 	color: $darkGrey;
 	position: relative;
 	transform: translateY(5rem);
-	text-align: left;
-	margin-right: .5rem;
-	margin-left: .5rem;
 	margin-bottom: 12rem;
 	filter: drop-shadow(1px 0px 1px $lightGrey);
 
@@ -26,7 +23,7 @@
 
 	&__title {
 		font-weight: 300;
-		font-size: 1.1rem;
+		font-size: 1.05rem;
 		padding-top: 42px;
 		margin-bottom: 7rem;
 		text-align: center;
@@ -66,46 +63,45 @@
 		}
 	}
 
-	&__subtitle {
-		font-size: .85rem;
-		font-weight: 300;
-		margin-bottom: 3rem;
-
-		@mixin forTabletPortrait {
-			font-size: 1.2rem;
-			margin-bottom: 20rem;
-		}
+	&__container {
+		width: 40%;
+		clear: both;
+		margin-left: 30%;
+		margin-right: 30%;
 
 		@mixin forTabletLandscape {
-			font-size: 1.89rem;
+			width: 33.3%;
+			margin-right: 33.3%;
+			margin-left: 33.3%;
 		}
 
 		@mixin forDesktop {
-			font-size: 2.4rem;
+			width: 20%;
+			margin-left: 40%;
+			margin-right: 40%;
 		}
 	}
 
 	&__logo {
-		float: right;
-		max-height: 200px;
-		margin: 0;
-		margin-bottom: 3rem;
+		max-width: 100%;
+		padding: 0px;
 
 		@mixin forTabletPortrait {
 			margin-top: 3.6rem;
-			max-height: 250px;
-			margin-bottom: 1rem;
+			margin-bottom: .5rem;
+			max-width: 100%;
 		}
 
 		@mixin forTabletLandscape {
-			max-height: 280px;
+			max-width: 100%;
 			margin-top: 42px;
 			margin-bottom: 1rem;
 		}
 
 		@mixin forDesktop {
-			max-height: 300px;
+			max-width: 100%;
 			margin-top: 20px;
+			
 		}
 
 		&--index {
