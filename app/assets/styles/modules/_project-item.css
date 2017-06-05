@@ -43,6 +43,10 @@
 			font-size: 1rem;
 			padding-top: 14px;
 		}
+
+		&--margintop {
+			margin-top: -5px;
+		}
 	}
 
 	&__icon {

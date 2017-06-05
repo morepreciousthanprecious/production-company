@@ -76,14 +76,14 @@
 
 	&__icon-source {
 		opacity: .5;
-		max-width: 100px;
-		margin-left: 35%;
-		margin-right: 25%;
+		max-width: 33.3%;
+		margin-left: 33.3%;
+		margin-right: 33.3%;
 
 		@mixin forTabletPortrait {
-			max-width: 100px;
+			max-width: 8.4em;
 			margin-right: 33.3%;
-			margin-left: 40%;
+			margin-left: 33.3%;
 		}
 
 		@mixin forTabletLandscape {
@@ -123,6 +123,7 @@
 
 		&--last {
 			padding-right: 0;
+			max-width: 86px;
 		}
 	}
 
