@@ -1,0 +1,13 @@
+.video-hero {
+	margin-top: 4.7rem;
+	
+
+    &__video {
+		margin: 0;
+		padding: 0;
+		object-fit: cover;
+		width: 100%;
+		-webkit-filter: brightness(.85);
+    	filter: brightness(.85);
+	}
+}

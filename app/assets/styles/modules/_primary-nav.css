@@ -57,16 +57,14 @@
 		color: $wrRed;
 	}
 
-
-
 	&--is-visible {
 		display: block;
 		position: absolute;
 		padding-top: 30px;
 		padding-bottom: 30px;
-		padding-left: 43%;
-		padding-right: 43%;
-		margin-left: -26px;
+		padding-left: 44%;
+		padding-right: 44%;
+		margin-left: -43px;
 		z-index: 100;
 		background-color: #fff;
 	}

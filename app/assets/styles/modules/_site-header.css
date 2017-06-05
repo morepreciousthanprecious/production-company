@@ -6,7 +6,7 @@
 	background-color: #ffffff;
 	padding-top: 1.1rem;
 	padding-bottom: 1rem;
-	padding-left: 10px;
+	padding-left: 1px;
 	filter: drop-shadow(1px 0px 2px $darkGrey);
 
 	&--p-top {
@@ -34,12 +34,6 @@
 		&-index {
 			opacity: 0;
 		}
-	}
-
-	&--index {
-		padding-top: 1rem;
-		padding-left: 10px;
-		z-index: 99;
 	}
 
 	&__menu-icon {
@@ -93,7 +87,7 @@
 	}
 
 	&__menu-icon--index {
-
+		padding-right: 2.25em;
 	}
 
 	&__menu-icon--close-x {
