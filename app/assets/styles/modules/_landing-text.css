@@ -1,5 +1,5 @@
 .landing-text {
-	color: #fff;
+	color: #000;
 	position: relative;
 	margin-top: -15.5rem;
 	margin-bottom: 1rem;
@@ -27,19 +27,17 @@
 
 	&__title {
 		font-weight: 300;
-		font-size: 1.05rem;
-		margin-bottom: 2.5rem;
+		font-size: 1rem;
+		margin-bottom: 12.5rem;
 		margin-right: 0rem;
 		padding-right: 1rem;
 		text-align: center;
 		text-transform: uppercase;
-		letter-spacing: 1px;
 		word-spacing: 3px;
-		background-color: $lightGrey;
 
 		@mixin forTabletPortrait {
-			font-size: 1.8rem;
-			margin-top: 10.55rem;
+			font-size: 1.35rem;
+			margin-top: 3.55rem;
 			margin-bottom: 14.5rem;
 			margin-left: 0rem;
 			margin-right: 0rem;
@@ -47,9 +45,9 @@
 
 		@mixin forTabletLandscape {
 			margin-top: 11.8rem;
-			font-size: 2.2rem;
+			font-size: 1.8rem;
 			margin-left: 0rem;
-			margin-bottom: 6.5rem;
+			margin-bottom: 2.5rem;
 		}
 
 		@mixin forDesktop {
@@ -67,6 +65,34 @@
 			@mixin forTabletLandscape {
 				margin-top: 6.4rem;
 			}
+		}
+	}
+
+	&__logo {
+		max-width: 40%;
+		margin-top: 12.8rem;
+		margin-bottom: 2rem;
+		margin-right: 30%;
+		margin-left: 30%;
+
+		@mixin forTabletPortrait {
+			margin-top: 29rem;
+		}
+
+		@mixin forTabletLandscape {
+			max-width: 33.3%;
+			margin-left: 33.3%;
+			margin-right: 33.3%;
+			margin-top: 31rem;
+			margin-bottom: -5.5rem;
+		}
+
+		@mixin forDesktop {
+			max-width: 20%;
+			margin-left: 40%;
+			margin-right: 40%;
+			margin-top: 22rem;
+			margin-bottom: 3rem;
 		}
 	}
 }

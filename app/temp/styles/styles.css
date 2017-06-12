@@ -472,7 +472,7 @@ a {
 }
 
 .landing-text {
-	color: #fff;
+	color: #000;
 	position: relative;
 	margin-top: -15.5rem;
 	margin-bottom: 1rem;
@@ -509,22 +509,20 @@ a {
 
 .landing-text__title {
 		font-weight: 300;
-		font-size: 1.05rem;
-		margin-bottom: 2.5rem;
+		font-size: 1rem;
+		margin-bottom: 12.5rem;
 		margin-right: 0rem;
 		padding-right: 1rem;
 		text-align: center;
 		text-transform: uppercase;
-		letter-spacing: 1px;
 		word-spacing: 3px;
-		background-color: rgba(0, 0, 0, .10);
 	}
 
 @media (min-width: 650px) {
 
 .landing-text__title {
-			font-size: 1.8rem;
-			margin-top: 10.55rem;
+			font-size: 1.35rem;
+			margin-top: 3.55rem;
 			margin-bottom: 14.5rem;
 			margin-left: 0rem;
 			margin-right: 0rem
@@ -535,9 +533,9 @@ a {
 
 .landing-text__title {
 			margin-top: 11.8rem;
-			font-size: 2.2rem;
+			font-size: 1.8rem;
 			margin-left: 0rem;
-			margin-bottom: 6.5rem
+			margin-bottom: 2.5rem
 	}
 	}
 
@@ -562,6 +560,43 @@ a {
 .landing-text__title--center {
 				margin-top: 6.4rem
 		}
+	}
+
+.landing-text__logo {
+		max-width: 40%;
+		margin-top: 12.8rem;
+		margin-bottom: 2rem;
+		margin-right: 30%;
+		margin-left: 30%;
+	}
+
+@media (min-width: 650px) {
+
+.landing-text__logo {
+			margin-top: 29rem
+	}
+	}
+
+@media (min-width: 900px) {
+
+.landing-text__logo {
+			max-width: 33.3%;
+			margin-left: 33.3%;
+			margin-right: 33.3%;
+			margin-top: 31rem;
+			margin-bottom: -5.5rem
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.landing-text__logo {
+			max-width: 20%;
+			margin-left: 40%;
+			margin-right: 40%;
+			margin-top: 22rem;
+			margin-bottom: 3rem
+	}
 	}
 
 .btn {
@@ -606,8 +641,7 @@ a {
 
 .section__more--press {
 		font-weight: 700;
-		margin-left: 30%;
-		margin-right: 30%;
+		text-align: center;
 	}
 
 @media (min-width: 650px) {
@@ -1550,6 +1584,10 @@ a {
 	-webkit-filter: drop-shadow(1px 0px 2px #4D4D4D);
 	        filter: drop-shadow(1px 0px 2px #4D4D4D);
 }
+
+.site-header--index {
+		margin-top: 1rem;
+	}
 
 .site-header--p-top {
 		padding-top: 9px;

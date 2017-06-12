@@ -19,8 +19,7 @@
 
 	&__more--press {
 		font-weight: 700;
-		margin-left: 30%;
-		margin-right: 30%;
+		text-align: center; 
 
 		@mixin forTabletPortrait {
 			margin-left: 40%;
