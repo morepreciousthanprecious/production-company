@@ -83,7 +83,7 @@
 			}
 
 			@mixin forDesktop {
-				padding-top: 20px;
+				padding-top: 40px;
 			}
 		}
 
@@ -100,6 +100,17 @@
 				margin-top: 75px;
 			}
 
+			@mixin forDesktop {
+				margin-top: 2.5rem;
+			}
+
+		}
+
+
+		&--lf {
+			@mixin forDesktop {
+				margin-top: 2.75rem;
+			}
 		}
 
 		&--pm {
@@ -184,6 +195,10 @@
 
 		&--abh {
 			margin-top: 1rem;
+
+			@mixin forDesktop{
+				margin-top: 2.65rem;
+			}
 		}
 
 		&--tw {

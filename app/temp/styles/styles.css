@@ -1182,7 +1182,7 @@ a {
 @media (min-width: 1200px) {
 
 .project-item__icon-abh {
-				padding-top: 20px
+				padding-top: 40px
 		}
 	}
 
@@ -1206,6 +1206,21 @@ a {
 .project-item__icon-tw {
 				margin-top: 75px
 
+		}
+	}
+
+@media (min-width: 1200px) {
+
+.project-item__icon-tw {
+				margin-top: 2.5rem
+
+		}
+	}
+
+@media (min-width: 1200px) {
+
+.project-item__icon--lf {
+				margin-top: 2.75rem
 		}
 	}
 
@@ -1311,6 +1326,13 @@ a {
 .project-item__item-desc--sub--abh {
 			margin-top: 1rem;
 		}
+
+@media (min-width: 1200px) {
+
+.project-item__item-desc--sub--abh {
+				margin-top: 2.65rem
+		}
+	}
 
 .project-item__item-desc--sub--tw {
 			margin-top: 1rem;
