@@ -28,6 +28,11 @@
 				padding-top: 4rem;
 			}
 		}
+
+		&-margins {
+			margin-left: 3rem;
+			margin-right: 3rem;
+		}
 	}
 
 	&__heading--med {

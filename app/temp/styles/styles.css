@@ -1851,6 +1851,11 @@ a {
 		}
 	}
 
+.press__heading--large-margins {
+			margin-left: 3rem;
+			margin-right: 3rem;
+		}
+
 .press__heading--med {
 		font-weight: 400;
 		letter-spacing: -1px;
