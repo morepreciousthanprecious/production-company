@@ -1049,7 +1049,8 @@ a {
 	margin-bottom: 4px; 
 	padding-top: 26.2px;
 	height: 0;
-	overflow: hidden;
+	overflow: hidden; 
+	background-color: #000;
 }
 
 .video-container--p-top {
