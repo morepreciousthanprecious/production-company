@@ -61,6 +61,10 @@
 			
 		}
 
+		&--wgh {
+			margin-top: 34px;
+		}
+
 		&-ph {
 			max-width: 55px;
 			height: 80px;
@@ -70,7 +74,7 @@
 				margin-top: 32px;
 			}
 			@mixin forDesktop {
-				margin-top: 2rem; 
+				margin-top: 3rem; 
 			}
 		}
 
@@ -80,6 +84,7 @@
 			@mixin forTabletLandscape {
 				max-height: 100px;
 				transform: translateY(-4%);
+				margin-top: 50px;
 			}
 
 			@mixin forDesktop {
@@ -131,16 +136,17 @@
 			}
 
 			@mixin forDesktop {
-				margin-top: 6.4rem;
+				margin-top: 6.3rem;
 			}
 		}
 
 		&--cs {
-			margin-bottom: 0.625rem;
+			margin-bottom: 10px;
 			padding-top: 0.625rem;
 
 			@mixin forDesktop {
-				margin-top: 6.2rem;
+				margin-top: 7.6rem;
+				margin-bottom: 0px;
 			}
 		}
 
@@ -162,6 +168,20 @@
 
 		}
 
+		&--wor {
+			margin-bottom: -5px;
+			margin-top: 20px;
+
+			@mixin forTabletLandscape {
+				margin-top: 100px;
+				margin-bottom: 0px;
+			}
+
+			@mixin forDesktop {
+				margin-top: 100px;
+			}
+		}
+
 	}
 
 	&__item-desc {
@@ -181,20 +201,32 @@
 	&__item-desc--sub {
 		padding-top: 4.85rem;
 
+		&--wgh {
+			margin-top: 50px;
+
+			@mixin forDesktop {
+				margin-top: 50px;
+			}
+		}
+
 		&--ph {
-			margin-top: -2.4rem;
+			margin-top: -2rem;
 
 			@mixin forTabletLandscape {
 				margin-top: -1rem;
 				}
 
 			@mixin forDesktop {
-				margin-top: -1.3rem;
+				margin-top: 0px;
 			}
 		}
 
 		&--abh {
 			margin-top: 1rem;
+
+			@mixin forTabletLandscape {
+				margin-top: 50px;
+			}
 
 			@mixin forDesktop{
 				margin-top: 2.65rem;
@@ -225,7 +257,7 @@
 			}
 
 			@mixin forDesktop {
-				margin-top: 6.95rem;
+				margin-top: 6.75rem;
 			}
 		}
 
@@ -233,7 +265,7 @@
 			margin-top: 40px;
 
 			@mixin forDesktop {
-				margin-top: 7.85rem;
+				margin-top: 8.6rem;
 			}
 		}
 
@@ -251,6 +283,22 @@
 
 		&--r3 {
 			margin-top: 3.5rem;
+		}
+
+		&--wor {
+			margin-top: 20px;
+
+			@mixin forTabletPortrait {
+				margin-top: 30px;
+			}
+
+			@mixin forTabletLandscape {
+				margin-top: 114px;
+			}
+
+			@mixin forDesktop {
+				margin-top: 100px;
+			}
 		}
 	}
 
