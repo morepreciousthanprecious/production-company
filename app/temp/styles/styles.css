@@ -1245,6 +1245,7 @@ a {
 .project-item__icon--wm {
 			margin-bottom: 10px;
 			padding-top: 10px;
+			visibility: hidden;
 		}
 
 @media (min-width: 900px) {
@@ -1403,6 +1404,7 @@ a {
 
 .project-item__item-desc--sub--wm {
 			margin-top: 30px;
+			visibility: hidden;
 		}
 
 @media (min-width: 900px) {
