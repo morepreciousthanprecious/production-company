@@ -120,10 +120,20 @@
 
 		&--pm {
 			margin-bottom: 10px;
-			padding-top: 20px;
+			padding-top: 0px;
 
 			@mixin forTabletLandscape {
-				margin-top: 3.1rem;
+				margin-top: 0rem;
+			}
+		}
+
+		&--mfol {
+			margin-bottom: 10px;
+			padding: 0px;
+			visibility: hidden;
+
+			@mixin forTabletLandscape {
+				margin-top: .14rem;
 			}
 		}
 
@@ -133,7 +143,7 @@
 			visibility: hidden;
 
 			@mixin forTabletLandscape {
-				margin-top: 6rem;
+				margin-top: 1rem;
 			}
 
 			@mixin forDesktop {
@@ -243,10 +253,20 @@
 		}	
 
 		&--pm {
-			margin-top: 3.75rem;
+			margin-top: 2rem;
 
 			@mixin forTabletLandscape {
-				margin-top: 5.85rem;
+				margin-top: 2rem;
+			}
+		} 
+
+		&--mfol {
+			margin-top: 1rem;
+			visibility: hidden;
+			padding: 0;
+
+			@mixin forTabletLandscape {
+				margin-top: 1rem;
 			}
 		} 
 
@@ -255,7 +275,7 @@
 			visibility: hidden;
 
 			@mixin forTabletLandscape {
-				margin-top: 7.16rem;
+				margin-top: 1.16rem;
 			}
 
 			@mixin forDesktop {
