@@ -28,5 +28,8 @@
     "postcss-nested": "^2.1.2",
     "postcss-simple-vars": "^4.1.0",
     "webpack": "^2.7.0"
+  },
+  "resolutions": {
+    "natives": "1.1.3"
   }
 }
